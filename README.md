@@ -152,7 +152,7 @@ I build my projects to be:
 
 ## Profile Views
 
-[![](https://visitcount.itsvg.in/api?id=dollar-src&icon=2&color=8)](https://visitcount.itsvg.in)
+![Profile Views](https://komarev.com/ghpvc/?username=gopeto222&style=for-the-badge)
 
 ---
 
