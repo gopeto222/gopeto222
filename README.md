@@ -1,4 +1,4 @@
-# Hi, I'm g0peto
+# Hi, I'm G. Kanchev
 
 ### FiveM Developer | Discord Bot Developer | Backend & Web Developer
 
