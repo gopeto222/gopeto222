@@ -28,7 +28,7 @@ class DiscoveryTests(unittest.TestCase):
         self.assertEqual(len({p['id'] for p in projects}),20)
         self.assertTrue(all(public_record_is_safe(p) for p in projects))
         self.assertEqual(matrix(projects,'en',True).count('class="missing"'),0)
-        self.assertEqual(len(generate(projects)),78)
+        self.assertEqual(len(generate(projects)),82)
 
     def test_language_snapshot(self):
         data=json.loads((ROOT/'data/languages.json').read_text())

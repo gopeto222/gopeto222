@@ -1,4 +1,4 @@
-<p align="right"><a href="README.md">EN</a> · <strong>БГ</strong></p>
+<a href="README.md" title="Към английската версия"><picture><source media="(max-width: 650px)" srcset="assets/generated/header-bg-mobile.svg"><img src="assets/generated/header-bg.svg" alt="Избран BG; отвори английската версия" width="100%"></picture></a>
 
 <picture><source media="(max-width: 650px)" srcset="assets/generated/hero-bg-mobile.svg"><img src="assets/generated/hero-bg.svg" alt="Георги Канчев — софтуерен инженер, който изгражда инструменти, FiveM системи и уеб платформи" width="100%"></picture>
 
