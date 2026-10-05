@@ -143,6 +143,7 @@ def atomic_write(path: Path, content: str) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--validate", action="store_true")
+    parser.add_argument("--force-render", action="store_true", help="Regenerate visuals after a design change")
     args = parser.parse_args()
     if args.validate:
         stored = json.loads(DATA.read_text())
@@ -156,6 +157,15 @@ def main() -> None:
     if not token:
         raise SystemExit("GH_TOKEN or GITHUB_TOKEN is required")
     data = parse_calendar(request_calendar("gopeto222", token))
+    if DATA.exists() and not args.force_render:
+        previous = json.loads(DATA.read_text())
+        meaningful = lambda payload: (
+            payload['total'], payload['active_days'],
+            {key: count for key, count in payload['days'].items() if count}
+        )
+        if meaningful(data) == meaningful(previous):
+            print('No contribution change; keeping the existing dated snapshot.')
+            return
     today = datetime.now(timezone.utc).date().isoformat()
     atomic_write(DATA, json.dumps(data, indent=2, sort_keys=True) + "\n")
     for lang in ("en", "bg"):

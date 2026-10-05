@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "generatedDirectory": "assets/generated",
+  "screenshotPolicy": "Only real, reviewed, redacted product captures may be listed. Diagrams are not screenshots.",
+  "featured": {
+    "codeguard": {"projectId": "project-12", "screenshots": [], "diagram": "architecture-codeguard"},
+    "rules": {"projectId": "project-14", "screenshots": [], "diagram": "architecture-rules"},
+    "dmv": {"projectId": "project-03", "screenshots": [], "diagram": "architecture-dmv"},
+    "registry": {"projectId": "project-01", "screenshots": [], "diagram": "architecture-registry"},
+    "collaboration": {"projectId": "project-20", "screenshots": [], "diagram": "architecture-collaboration"}
+  }
+}

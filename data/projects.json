@@ -35,8 +35,19 @@
       "featured": true,
       "publicDisplayAllowed": true,
       "screenshots": [],
-      "architecture": "assets/projects/registry.svg",
-      "lastActivity": "2026-08-10"
+      "architecture": null,
+      "lastActivity": "2026-08-10",
+      "displayName": "Business registry",
+      "projectType": "Organization contribution",
+      "role": "Verified contributor",
+      "shortDescription": "Business registry; details intentionally limited for private source.",
+      "repositoryOwner": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "verified": true,
+      "verificationSource": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history",
+      "repositoryAvailability": "Private source",
+      "architectureKey": "registry"
     },
     {
       "id": "project-02",
@@ -65,7 +76,18 @@
       "publicDisplayAllowed": true,
       "screenshots": [],
       "architecture": null,
-      "lastActivity": "2026-09-21"
+      "lastActivity": "2026-09-21",
+      "displayName": "Armor plate resource",
+      "projectType": "Organization contribution",
+      "role": "Verified contributor",
+      "shortDescription": "Armor plate resource; details intentionally limited for private source.",
+      "repositoryOwner": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "verified": true,
+      "verificationSource": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history",
+      "repositoryAvailability": "Private source",
+      "architectureKey": null
     },
     {
       "id": "project-03",
@@ -99,8 +121,19 @@
       "featured": true,
       "publicDisplayAllowed": true,
       "screenshots": [],
-      "architecture": "assets/projects/dmv.svg",
-      "lastActivity": "2026-08-10"
+      "architecture": null,
+      "lastActivity": "2026-08-10",
+      "displayName": "DMV tablet system",
+      "projectType": "Organization contribution",
+      "role": "Verified contributor",
+      "shortDescription": "DMV tablet system; details intentionally limited for private source.",
+      "repositoryOwner": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "verified": true,
+      "verificationSource": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history",
+      "repositoryAvailability": "Private source",
+      "architectureKey": "dmv"
     },
     {
       "id": "project-04",
@@ -133,7 +166,18 @@
       "publicDisplayAllowed": true,
       "screenshots": [],
       "architecture": null,
-      "lastActivity": "2026-08-10"
+      "lastActivity": "2026-08-10",
+      "displayName": "Document resource",
+      "projectType": "Organization contribution",
+      "role": "Verified contributor",
+      "shortDescription": "Document resource; details intentionally limited for private source.",
+      "repositoryOwner": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "verified": true,
+      "verificationSource": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history",
+      "repositoryAvailability": "Private source",
+      "architectureKey": null
     },
     {
       "id": "project-05",
@@ -162,7 +206,18 @@
       "publicDisplayAllowed": true,
       "screenshots": [],
       "architecture": null,
-      "lastActivity": "2026-09-21"
+      "lastActivity": "2026-09-21",
+      "displayName": "Pawnshop resource",
+      "projectType": "Organization contribution",
+      "role": "Verified contributor",
+      "shortDescription": "Pawnshop resource; details intentionally limited for private source.",
+      "repositoryOwner": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "verified": true,
+      "verificationSource": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history",
+      "repositoryAvailability": "Private source",
+      "architectureKey": null
     },
     {
       "id": "project-06",
@@ -191,7 +246,18 @@
       "publicDisplayAllowed": true,
       "screenshots": [],
       "architecture": null,
-      "lastActivity": "2026-08-10"
+      "lastActivity": "2026-08-10",
+      "displayName": "Police equipment resource",
+      "projectType": "Organization contribution",
+      "role": "Verified contributor",
+      "shortDescription": "Police equipment resource; details intentionally limited for private source.",
+      "repositoryOwner": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "verified": true,
+      "verificationSource": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history",
+      "repositoryAvailability": "Private source",
+      "architectureKey": null
     },
     {
       "id": "project-07",
@@ -220,7 +286,18 @@
       "publicDisplayAllowed": true,
       "screenshots": [],
       "architecture": null,
-      "lastActivity": "2026-08-10"
+      "lastActivity": "2026-08-10",
+      "displayName": "Police boat resource",
+      "projectType": "Organization contribution",
+      "role": "Verified contributor",
+      "shortDescription": "Police boat resource; details intentionally limited for private source.",
+      "repositoryOwner": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "verified": true,
+      "verificationSource": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history",
+      "repositoryAvailability": "Private source",
+      "architectureKey": null
     },
     {
       "id": "project-08",
@@ -253,7 +330,18 @@
       "publicDisplayAllowed": true,
       "screenshots": [],
       "architecture": null,
-      "lastActivity": "2026-08-11"
+      "lastActivity": "2026-08-11",
+      "displayName": "Small robberies resource",
+      "projectType": "Organization contribution",
+      "role": "Verified contributor",
+      "shortDescription": "Small robberies resource; details intentionally limited for private source.",
+      "repositoryOwner": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "verified": true,
+      "verificationSource": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history",
+      "repositoryAvailability": "Private source",
+      "architectureKey": null
     },
     {
       "id": "project-09",
@@ -284,7 +372,18 @@
       "publicDisplayAllowed": true,
       "screenshots": [],
       "architecture": null,
-      "lastActivity": "2026-09-21"
+      "lastActivity": "2026-09-21",
+      "displayName": "Traffic resource",
+      "projectType": "Organization contribution",
+      "role": "Verified contributor",
+      "shortDescription": "Traffic resource; details intentionally limited for private source.",
+      "repositoryOwner": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "verified": true,
+      "verificationSource": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history",
+      "repositoryAvailability": "Private source",
+      "architectureKey": null
     },
     {
       "id": "project-10",
@@ -313,7 +412,18 @@
       "publicDisplayAllowed": true,
       "screenshots": [],
       "architecture": null,
-      "lastActivity": "2026-08-10"
+      "lastActivity": "2026-08-10",
+      "displayName": "Vehicle identification resource",
+      "projectType": "Organization contribution",
+      "role": "Verified contributor",
+      "shortDescription": "Vehicle identification resource; details intentionally limited for private source.",
+      "repositoryOwner": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "verified": true,
+      "verificationSource": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history",
+      "repositoryAvailability": "Private source",
+      "architectureKey": null
     },
     {
       "id": "project-11",
@@ -338,7 +448,18 @@
       "publicDisplayAllowed": true,
       "screenshots": [],
       "architecture": null,
-      "lastActivity": "2026-09-04"
+      "lastActivity": "2026-09-04",
+      "displayName": "Development documentation",
+      "projectType": "Organization contribution",
+      "role": "Verified contributor",
+      "shortDescription": "Development documentation; details intentionally limited for private source.",
+      "repositoryOwner": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "verified": true,
+      "verificationSource": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history",
+      "repositoryAvailability": "Private source",
+      "architectureKey": null
     },
     {
       "id": "project-12",
@@ -374,8 +495,19 @@
       "featured": true,
       "publicDisplayAllowed": true,
       "screenshots": [],
-      "architecture": "assets/projects/codeguard.svg",
-      "lastActivity": "2026-10-04"
+      "architecture": null,
+      "lastActivity": "2026-10-04",
+      "displayName": "AstroByte CodeGuard",
+      "projectType": "Personal",
+      "role": "Owner / author",
+      "shortDescription": "AstroByte CodeGuard; details intentionally limited for private source.",
+      "repositoryOwner": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "verified": true,
+      "verificationSource": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history",
+      "repositoryAvailability": "Private source",
+      "architectureKey": "codeguard"
     },
     {
       "id": "project-13",
@@ -404,7 +536,18 @@
       "publicDisplayAllowed": true,
       "screenshots": [],
       "architecture": null,
-      "lastActivity": "2026-06-14"
+      "lastActivity": "2026-06-14",
+      "displayName": "Voltage system resource",
+      "projectType": "Personal",
+      "role": "Owner / author",
+      "shortDescription": "Voltage system resource; details intentionally limited for private source.",
+      "repositoryOwner": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "verified": true,
+      "verificationSource": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history",
+      "repositoryAvailability": "Private source",
+      "architectureKey": null
     },
     {
       "id": "project-14",
@@ -437,8 +580,19 @@
       "featured": true,
       "publicDisplayAllowed": true,
       "screenshots": [],
-      "architecture": "assets/projects/rules.svg",
-      "lastActivity": "2026-08-05"
+      "architecture": null,
+      "lastActivity": "2026-08-05",
+      "displayName": "Rules administration platform",
+      "projectType": "Personal",
+      "role": "Owner / author",
+      "shortDescription": "Rules administration platform; details intentionally limited for private source.",
+      "repositoryOwner": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "verified": true,
+      "verificationSource": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history",
+      "repositoryAvailability": "Private source",
+      "architectureKey": "rules"
     },
     {
       "id": "project-15",
@@ -468,7 +622,18 @@
       "publicDisplayAllowed": true,
       "screenshots": [],
       "architecture": null,
-      "lastActivity": "2026-10-05"
+      "lastActivity": "2026-10-05",
+      "displayName": "Engineering profile",
+      "projectType": "Personal",
+      "role": "Owner / author",
+      "shortDescription": "Public profile automation and presentation.",
+      "repositoryOwner": "gopeto222",
+      "repositoryUrl": "https://github.com/gopeto222/gopeto222",
+      "demoUrl": null,
+      "verified": true,
+      "verificationSource": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history",
+      "repositoryAvailability": "Public",
+      "architectureKey": null
     },
     {
       "id": "project-16",
@@ -501,7 +666,18 @@
       "publicDisplayAllowed": true,
       "screenshots": [],
       "architecture": null,
-      "lastActivity": "2025-08-21"
+      "lastActivity": "2025-08-21",
+      "displayName": "Fishing resource",
+      "projectType": "Personal",
+      "role": "Owner / author",
+      "shortDescription": "Fishing resource; details intentionally limited for private source.",
+      "repositoryOwner": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "verified": true,
+      "verificationSource": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history",
+      "repositoryAvailability": "Private source",
+      "architectureKey": null
     },
     {
       "id": "project-17",
@@ -532,7 +708,18 @@
       "publicDisplayAllowed": true,
       "screenshots": [],
       "architecture": null,
-      "lastActivity": "2026-09-02"
+      "lastActivity": "2026-09-02",
+      "displayName": "Game environment integration collection",
+      "projectType": "Personal",
+      "role": "Owner / author",
+      "shortDescription": "Game environment integration collection; details intentionally limited for private source.",
+      "repositoryOwner": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "verified": true,
+      "verificationSource": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history",
+      "repositoryAvailability": "Private source",
+      "architectureKey": null
     },
     {
       "id": "project-18",
@@ -564,7 +751,18 @@
       "publicDisplayAllowed": true,
       "screenshots": [],
       "architecture": null,
-      "lastActivity": "2026-08-12"
+      "lastActivity": "2026-08-12",
+      "displayName": "Crime system resource",
+      "projectType": "Personal",
+      "role": "Owner / author",
+      "shortDescription": "Crime system resource; details intentionally limited for private source.",
+      "repositoryOwner": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "verified": true,
+      "verificationSource": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history",
+      "repositoryAvailability": "Private source",
+      "architectureKey": null
     },
     {
       "id": "project-19",
@@ -594,7 +792,18 @@
       "publicDisplayAllowed": true,
       "screenshots": [],
       "architecture": null,
-      "lastActivity": "2026-09-30"
+      "lastActivity": "2026-09-30",
+      "displayName": "FiveM server resource collection",
+      "projectType": "Personal",
+      "role": "Owner / author",
+      "shortDescription": "FiveM server resource collection; details intentionally limited for private source.",
+      "repositoryOwner": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "verified": true,
+      "verificationSource": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history",
+      "repositoryAvailability": "Private source",
+      "architectureKey": null
     },
     {
       "id": "project-20",
@@ -627,8 +836,29 @@
       "featured": true,
       "publicDisplayAllowed": true,
       "screenshots": [],
-      "architecture": "assets/projects/collaboration.svg",
-      "lastActivity": "2026-09-10"
+      "architecture": null,
+      "lastActivity": "2026-09-10",
+      "displayName": "Collaborative FiveM server infrastructure",
+      "projectType": "Collaborative",
+      "role": "Collaborative contributor",
+      "shortDescription": "Collaborative FiveM server infrastructure; details intentionally limited for private source.",
+      "repositoryOwner": null,
+      "repositoryUrl": null,
+      "demoUrl": null,
+      "verified": true,
+      "verificationSource": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history",
+      "repositoryAvailability": "Private source",
+      "architectureKey": "collaboration"
     }
-  ]
+  ],
+  "auditSummary": {
+    "accessibleRepositories": 25,
+    "includedRepositories": 20,
+    "excludedWithoutAuthorshipEvidence": 5,
+    "personal": 8,
+    "organizationContributions": 11,
+    "collaborative": 1,
+    "archived": 0,
+    "forks": 0
+  }
 }

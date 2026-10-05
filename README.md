@@ -1,108 +1,183 @@
-<a href="README.bg.md" title="Switch to Bulgarian"><picture><source media="(max-width: 650px)" srcset="assets/generated/header-en-mobile.svg"><img src="assets/generated/header-en.svg" alt="EN selected; open Bulgarian version" width="100%"></picture></a>
+<!-- Generated from data/profile.json and data/projects.json by scripts/build_readmes.py. -->
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/hero-en-mobile.svg"><img src="assets/generated/hero-en.svg" alt="Georgi Kanchev — software engineer building developer tools, FiveM systems and web platforms" width="100%"></picture>
+<a href="README.bg.md" title="Switch to Bulgarian"><picture><source media="(max-width: 650px)" srcset="assets/generated/hero-en-mobile.svg"><img src="assets/generated/hero-en.svg" alt="Switch to Bulgarian; AstroByte engineering portfolio" width="100%"></picture></a>
 
-<p align="center"><a href="#command-center">Command center</a> · <a href="#featured-systems">Featured systems</a> · <a href="#all-projects">All projects</a> · <a href="#architecture">Architecture</a> · <a href="#activity">Activity</a> · <a href="#contact">Contact</a></p>
+<p align="center"><a href="#featured">Selected systems</a> · <a href="#archive">Project archive</a> · <a href="#technology">Technology</a> · <a href="#activity">Activity</a> · <a href="#contact">Contact</a></p>
 
-<a id="command-center"></a>
-<img src="assets/generated/section-02-en.svg" alt="02 — Developer command center" width="100%">
+I build local developer tools, administrative web software and FiveM systems. The work below separates personal ownership from observed contributions.
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/command-en-mobile.svg"><img src="assets/generated/command-en.svg" alt="Current focus, core languages and engineering priorities" width="100%"></picture>
+<a id="engineering"></a>
+<img src="assets/generated/chapter-engineering-en.svg" alt="Engineering" width="100%">
 
-I work across local developer tooling, FiveM server resources, and web administration. The technologies below are grounded in inspected repositories; the project inventory distinguishes personal work from collaborative contributions.
+<picture><source media="(max-width: 650px)" srcset="assets/generated/command-en-mobile.svg"><img src="assets/generated/command-en.svg" alt="Engineering dashboard with verified domains and practice" width="100%"></picture>
 
-<a id="featured-systems"></a>
-<img src="assets/generated/section-03-en.svg" alt="03 — Featured systems" width="100%">
+<a id="featured"></a>
+<img src="assets/generated/chapter-featured-en.svg" alt="Selected systems" width="100%">
 
-### AstroByte CodeGuard · local code intelligence
+Selected work is described from repository evidence. Private sources remain private.
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/feature-codeguard-en-mobile.svg"><img src="assets/generated/feature-codeguard-en.svg" alt="CodeGuard scanner dashboard showing analysis, findings, AI fix review and safe revert" width="100%"></picture>
+### AstroByte CodeGuard
 
-**Problem → solution.** Code findings need evidence and fixes need a controlled review path. CodeGuard combines a Rust scanner and CLI with a macOS Tauri 2 / React desktop app. It presents source context and findings, then optionally requests a proposal from OpenAI or Anthropic. The app shows a diff, requires explicit approval, verifies the result, and keeps guarded fix history.
+<picture><source media="(max-width: 650px)" srcset="assets/generated/feature-codeguard-en-mobile.svg"><img src="assets/generated/feature-codeguard-en.svg" alt="System diagram for AstroByte CodeGuard" width="100%"></picture>
 
-**My contribution:** personal repository with authored activity. **Engineering decisions:** local scanning, bounded and redacted AI context, credential storage in macOS Keychain, project-scoped source access, and conflict-aware revert are documented in the repository. **Status:** private development; no public source or release link.
+<sub>Verified system diagram; no product screenshot is implied.</sub>
 
-### Rules administration platform · full-stack product
+- **Problem:** Findings need source context; proposed fixes need a review and recovery path.
+- **System:** Rust scanner and CLI with a macOS Tauri 2 / React interface. Optional OpenAI or Anthropic proposals are shown as diffs before explicit approval.
+- **My contribution:** Personal project with observed authored commits.
+- **Engineering decision:** Local scanning, bounded and redacted AI context, Keychain credential storage, and conflict-aware revert.
+- **Status:** Private development; no public release claimed.
+- **Stack:** Rust · Tauri 2 · React · TypeScript · OpenAI · Anthropic
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/feature-rules-en-mobile.svg"><img src="assets/generated/feature-rules-en.svg" alt="Rules platform dashboard showing draft publishing, access control, revisions and audit logging" width="100%"></picture>
 
-**Problem → solution.** Server rules need a public reading experience and a controlled editorial workflow. The private personal project uses Next.js, React, TypeScript, PostgreSQL and Prisma. Its repository documents Discord OAuth administration, drafts and publishing, revision history, server-side access checks, and an audit log.
+### Rules administration platform
 
-**My contribution:** personal repository with authored commits. **Status:** private; no demo is claimed.
+<picture><source media="(max-width: 650px)" srcset="assets/generated/feature-rules-en-mobile.svg"><img src="assets/generated/feature-rules-en.svg" alt="System diagram for Rules administration platform" width="100%"></picture>
 
-### DMV tablet · FiveM workflow
+<sub>Verified system diagram; no product screenshot is implied.</sub>
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/feature-dmv-en-mobile.svg"><img src="assets/generated/feature-dmv-en.svg" alt="DMV system dashboard showing registration, plate history, verification and localization" width="100%"></picture>
+- **Problem:** Community rules need a readable public view and a controlled editorial process.
+- **System:** Next.js, React, TypeScript, PostgreSQL and Prisma with Discord OAuth administration, drafts, revisions and audit records.
+- **My contribution:** Personal project with observed authored commits.
+- **Engineering decision:** Server-side access checks and an auditable draft-to-publish workflow.
+- **Status:** Private source; no public demo claimed.
+- **Stack:** Next.js · React · TypeScript · PostgreSQL · Prisma
 
-**Project:** a private AstroByte Development Qbox resource with a FiveM NUI tablet, Lua client/server code, vehicle registration records and MySQL persistence. Its README documents registration, plate history, QR verification, and localization.
 
-**My contribution:** authored commits are present, including a release change. This is an **organization project**; the full system is not attributed to me alone. **Status:** private source.
+### DMV tablet system
 
-### Business registry · FiveM records
+<picture><source media="(max-width: 650px)" srcset="assets/generated/feature-dmv-en-mobile.svg"><img src="assets/generated/feature-dmv-en.svg" alt="System diagram for DMV tablet system" width="100%"></picture>
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/feature-registry-en-mobile.svg"><img src="assets/generated/feature-registry-en.svg" alt="Business registry dashboard showing records, documents, server validation and activity logging" width="100%"></picture>
+<sub>Verified system diagram; no product screenshot is implied.</sub>
 
-**Project:** a private AstroByte Development Qbox resource for business records and documents. The repository README describes server-side validation, MySQL activity logs, localization and a tablet interface.
+- **Problem:** Vehicle registration needs an in-game workflow with persistent records and verifiable history.
+- **System:** FiveM NUI tablet, Lua client/server code, Qbox integration and MySQL records. Repository documentation describes registration, plate history, QR checks and localization.
+- **My contribution:** Authored commits are observed, including a release change; this is an organization project.
+- **Engineering decision:** The system connects client interaction to server logic and persistent data.
+- **Status:** Private organization source.
+- **Stack:** Lua · Qbox · MySQL · NUI
 
-**My contribution:** an authored initial repository commit is visible. It establishes contribution, not sole ownership of every later change. **Status:** private source.
 
-### Collaborative FiveM server infrastructure
+### Business registry
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/feature-collaboration-en-mobile.svg"><img src="assets/generated/feature-collaboration-en.svg" alt="Collaborative FiveM infrastructure dashboard showing shared resource and database work" width="100%"></picture>
+<picture><source media="(max-width: 650px)" srcset="assets/generated/feature-registry-en-mobile.svg"><img src="assets/generated/feature-registry-en.svg" alt="System diagram for Business registry" width="100%"></picture>
 
-**Project:** a shared private FiveM repository under another developer's account. **My contribution:** 44 authored commits were observed on accessible branches during the audit, including a database change. This is a **collaborative project**; the visual describes the shared system and does not claim its full implementation as mine. **Status:** private source.
+<sub>Verified system diagram; no product screenshot is implied.</sub>
 
-<a id="all-projects"></a>
-<img src="assets/generated/section-04-en.svg" alt="04 — All projects" width="100%">
+- **Problem:** Business records and documents need a structured workflow with server checks.
+- **System:** A Qbox tablet resource with MySQL records, localization and activity logging described by its repository.
+- **My contribution:** An authored initial commit is observed. It does not establish sole ownership of later changes.
+- **Engineering decision:** Server-side validation protects the record flow; activity logs make changes traceable.
+- **Status:** Private organization source.
+- **Stack:** Lua · Qbox · MySQL
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/matrix-en-mobile.svg"><img src="assets/generated/matrix-en.svg" alt="Matrix of 20 verified personal and collaborative project records, with category, stack, role and visibility" width="100%"></picture>
 
-The matrix is generated from [the public-safe project inventory](data/projects.json). It includes all 20 accessible repositories with personal ownership or observed authored contributions, including this profile. Five additional organization repositories were reviewed and excluded because no authored contribution was established. Private entries use descriptive labels and omit repository URLs. A commit proves an authored change; it does not prove sole authorship of the project. [Discovery method and limits](docs/discovery.md).
+### Collaborative FiveM infrastructure
 
-<a id="how-i-build"></a>
-<img src="assets/generated/section-05-en.svg" alt="05 — How I build" width="100%">
+<picture><source media="(max-width: 650px)" srcset="assets/generated/feature-collaboration-en-mobile.svg"><img src="assets/generated/feature-collaboration-en.svg" alt="System diagram for Collaborative FiveM infrastructure" width="100%"></picture>
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/engineering-en-mobile.svg"><img src="assets/generated/engineering-en.svg" alt="Engineering principles covering security, performance, architecture and delivery" width="100%"></picture>
+<sub>Verified system diagram; no product screenshot is implied.</sub>
 
-The strongest evidence is in the systems themselves: CodeGuard's explicit diff review and guarded revert; the rules platform's server-side access control, revision history and audit log; and the Qbox registry's server validation. These are project-specific decisions, not a claim that every repository implements the same safeguards.
+- **Problem:** A shared FiveM system needs coordinated resource and data changes across contributors.
+- **System:** Accessible history shows Lua and TypeScript resource work plus a database change in a private shared repository.
+- **My contribution:** 44 authored commits were observed on accessible branches. The whole system is not attributed to one person.
+- **Engineering decision:** The portfolio labels the system as collaborative and limits its claims to observed work.
+- **Status:** Private collaborative source.
+- **Stack:** Lua · TypeScript · Vue
+
+
+<a id="archive"></a>
+<img src="assets/generated/chapter-archive-en.svg" alt="Project archive" width="100%">
+
+20 verified records from 25 accessible repositories. 5 organization repositories were excluded because authored work was not established. Personal ownership, organization contributions and collaborative work are labeled separately. [Audit method](docs/discovery.md).
+
+#### Developer tools
+
+<picture><source media="(max-width: 650px)" srcset="assets/generated/archive-tools-en-mobile.svg"><img src="assets/generated/archive-tools-en.svg" alt="Developer tools project inventory with role and availability" width="100%"></picture>
+
+#### Engineering operations
+
+<picture><source media="(max-width: 650px)" srcset="assets/generated/archive-operations-en-mobile.svg"><img src="assets/generated/archive-operations-en.svg" alt="Engineering operations project inventory with role and availability" width="100%"></picture>
+
+#### FiveM systems
+
+<picture><source media="(max-width: 650px)" srcset="assets/generated/archive-fivem-en-mobile.svg"><img src="assets/generated/archive-fivem-en.svg" alt="FiveM systems project inventory with role and availability" width="100%"></picture>
+
+#### Web systems
+
+<picture><source media="(max-width: 650px)" srcset="assets/generated/archive-web-en-mobile.svg"><img src="assets/generated/archive-web-en.svg" alt="Web systems project inventory with role and availability" width="100%"></picture>
+
+[Public source: this profile repository](https://github.com/gopeto222/gopeto222).
+
+<a id="fivem"></a>
+<img src="assets/generated/chapter-fivem-en.svg" alt="FiveM engineering" width="100%">
+
+<picture><source media="(max-width: 650px)" srcset="assets/generated/fivem-en-mobile.svg"><img src="assets/generated/fivem-en.svg" alt="FiveM client, server and persistence topology" width="100%"></picture>
+
+This is a pattern across documented resources, not a claim that every resource uses every component. The DMV and registry cases above provide concrete examples.
 
 <a id="technology"></a>
-<img src="assets/generated/section-06-en.svg" alt="06 — Technology" width="100%">
+<img src="assets/generated/chapter-technology-en.svg" alt="Technology" width="100%">
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/technology-en-mobile.svg"><img src="assets/generated/technology-en.svg" alt="Technology map for systems, web, data, desktop and AI, and delivery" width="100%"></picture>
-
-Language activity uses **source-file touches in authored, non-merge commits** across accessible personal and contributed repositories. A file touched in two commits counts twice. It does not measure code ownership or proficiency, and it includes no private source text. The snapshot is refreshed only during an authenticated audit; the public workflow cannot access private repositories. [Method](docs/discovery.md).
-
-<picture><source media="(max-width: 650px)" srcset="assets/generated/languages-en-mobile.svg"><img src="assets/generated/languages-en.svg" alt="Language activity based on source-file touches in authored commits" width="100%"></picture>
+<picture><source media="(max-width: 650px)" srcset="assets/generated/technology-en-mobile.svg"><img src="assets/generated/technology-en.svg" alt="Technology groups from verified project records" width="100%"></picture>
 
 <a id="architecture"></a>
-<img src="assets/generated/section-07-en.svg" alt="07 — Architecture" width="100%">
+<img src="assets/generated/chapter-architecture-en.svg" alt="Architecture" width="100%">
 
-These are high-level maps of components confirmed by repository documentation or structure. Optional and internal paths are intentionally simplified.
+The diagrams show documented components and important boundaries. Optional integrations are labeled.
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/architecture-codeguard-en-mobile.svg"><img src="assets/generated/architecture-codeguard-en.svg" alt="CodeGuard: local project to Rust scanner, findings, optional AI proposal and review" width="100%"></picture>
+#### AstroByte CodeGuard
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/architecture-rules-en-mobile.svg"><img src="assets/generated/architecture-rules-en.svg" alt="Rules platform: browser, Next.js, Discord authentication, editor and PostgreSQL" width="100%"></picture>
+<picture><source media="(max-width: 650px)" srcset="assets/generated/architecture-codeguard-en-mobile.svg"><img src="assets/generated/architecture-codeguard-en.svg" alt="AstroByte CodeGuard architecture diagram" width="100%"></picture>
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/architecture-dmv-en-mobile.svg"><img src="assets/generated/architecture-dmv-en.svg" alt="DMV: player, NUI tablet, Lua server, Qbox and MySQL" width="100%"></picture>
+#### Rules administration platform
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/architecture-collaboration-en-mobile.svg"><img src="assets/generated/architecture-collaboration-en.svg" alt="Collaborative FiveM system: client, server resources, shared workflow and persistence" width="100%"></picture>
+<picture><source media="(max-width: 650px)" srcset="assets/generated/architecture-rules-en-mobile.svg"><img src="assets/generated/architecture-rules-en.svg" alt="Rules administration platform architecture diagram" width="100%"></picture>
+
+#### DMV tablet system
+
+<picture><source media="(max-width: 650px)" srcset="assets/generated/architecture-dmv-en-mobile.svg"><img src="assets/generated/architecture-dmv-en.svg" alt="DMV tablet system architecture diagram" width="100%"></picture>
+
+<details><summary>Additional architecture maps</summary>
+
+#### Business registry
+
+<picture><source media="(max-width: 650px)" srcset="assets/generated/architecture-registry-en-mobile.svg"><img src="assets/generated/architecture-registry-en.svg" alt="Business registry architecture diagram" width="100%"></picture>
+
+#### Collaborative FiveM infrastructure
+
+<picture><source media="(max-width: 650px)" srcset="assets/generated/architecture-collaboration-en-mobile.svg"><img src="assets/generated/architecture-collaboration-en.svg" alt="Collaborative FiveM infrastructure architecture diagram" width="100%"></picture>
+
+</details>
 
 <a id="activity"></a>
-<img src="assets/generated/section-08-en.svg" alt="08 — Activity" width="100%">
+<img src="assets/generated/chapter-activity-en.svg" alt="Activity" width="100%">
 
-<picture><source media="(max-width: 650px)" srcset="assets/metrics/activity-en-mobile.svg"><img src="assets/metrics/activity-en.svg" alt="Public GitHub contribution counts, active days, streaks and daily calendar" width="100%"></picture>
+<picture><source media="(max-width: 650px)" srcset="assets/metrics/activity-en-mobile.svg"><img src="assets/metrics/activity-en.svg" alt="Public GitHub contribution calendar and streaks" width="100%"></picture>
 
-The card refreshes from GitHub's contribution calendar. Contributions are not equivalent to commits, hours or project ownership. The date on the card shows when it was generated. [Metric method](docs/metrics.md).
+The card is generated from GitHub’s public contribution calendar. Counts are not hours, code ownership or project impact. [Metric method](docs/metrics.md).
 
-<a id="about"></a>
-<img src="assets/generated/section-09-en.svg" alt="09 — About" width="100%">
+<picture><source media="(max-width: 650px)" srcset="assets/generated/languages-en-mobile.svg"><img src="assets/generated/languages-en.svg" alt="Source-file touches in authored non-merge commits" width="100%"></picture>
 
-I build at the boundary between product interfaces and systems work: a scanner with guarded AI proposals, administrative workflows with explicit permissions, and FiveM resources connected to server logic and persistent data. I use Git, tests and documentation to make those systems easier to change and recover.
+Language activity is a dated, contribution-aware snapshot of source-file touches. It does not measure proficiency. [Audit limits](docs/discovery.md).
+
+<a id="practice"></a>
+<img src="assets/generated/chapter-practice-en.svg" alt="How I build" width="100%">
+
+<picture><source media="(max-width: 650px)" srcset="assets/generated/practice-en-mobile.svg"><img src="assets/generated/practice-en.svg" alt="Engineering decisions for security, performance, architecture and delivery" width="100%"></picture>
+
+These are examples from specific projects, not a claim that every repository has the same safeguards.
+
+<a id="services"></a>
+<img src="assets/generated/chapter-services-en.svg" alt="Work with me" width="100%">
+
+<picture><source media="(max-width: 650px)" srcset="assets/generated/services-en-mobile.svg"><img src="assets/generated/services-en.svg" alt="Work areas supported by verified experience" width="100%"></picture>
 
 <a id="contact"></a>
-<img src="assets/generated/section-10-en.svg" alt="10 — Contact" width="100%">
+<img src="assets/generated/chapter-contact-en.svg" alt="Contact" width="100%">
 
-For developer tools, FiveM systems, or full-stack administration work, [contact me on GitHub](https://github.com/gopeto222). Email, website and Discord links will appear here when public contact details are available.
+Have a tool, platform or system in mind? Start with a clear problem and a conversation on GitHub.
 
-<sub>AstroByte Development · Georgi Kanchev · <a href="README.bg.md">Българска версия</a></sub>
+<a href="https://github.com/gopeto222" title="Contact Georgi on GitHub"><picture><source media="(max-width: 650px)" srcset="assets/generated/contact-en-mobile.svg"><img src="assets/generated/contact-en.svg" alt="Contact @gopeto222 on GitHub" width="100%"></picture></a>
+
+<sub>AstroByte Development · Georgi Kanchev · <a href="README.bg.md">Switch to Bulgarian</a></sub>
