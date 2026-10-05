@@ -46,7 +46,11 @@ def parse_calendar(calendar: dict[str, Any]) -> dict[str, Any]:
         raise ValueError("Missing contribution weeks")
     days: dict[str, int] = {}
     for week in weeks:
+        if not isinstance(week, dict) or not isinstance(week.get("contributionDays"), list):
+            raise ValueError("Invalid contribution week")
         for item in week["contributionDays"]:
+            if not isinstance(item, dict) or "date" not in item or "contributionCount" not in item:
+                raise ValueError("Invalid contribution day")
             day = date.fromisoformat(item["date"])
             count = item["contributionCount"]
             if not isinstance(count, int) or count < 0 or day.isoformat() in days:
@@ -75,14 +79,24 @@ def render_svg(data: dict[str, Any], generated: str) -> str:
     current, longest = streaks(days, date.fromisoformat(generated))
     last = max((key for key, value in days.items() if value), default="No public activity")
     lines = [
-        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 250" role="img" aria-labelledby="t d">',
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 375" role="img" aria-labelledby="t d">',
         '<title id="t">GitHub activity</title><desc id="d">Public contribution calendar summary</desc>',
-        '<rect width="900" height="250" rx="18" fill="#151b23"/>',
+        '<rect width="900" height="375" rx="18" fill="#151b23"/>',
         '<text x="30" y="43" fill="#69d2c7" font-family="Arial,sans-serif" font-size="18">GITHUB ACTIVITY</text>',
     ]
     for x, label, value in [(30, "CONTRIBUTIONS", data["total"]), (245, "ACTIVE DAYS", data["active_days"]), (460, "CURRENT STREAK", current), (675, "LONGEST STREAK", longest)]:
         lines.extend([f'<text x="{x}" y="105" fill="#f0f6f8" font-family="Arial,sans-serif" font-size="42" font-weight="700">{value}</text>', f'<text x="{x}" y="133" fill="#adc2c8" font-family="Arial,sans-serif" font-size="14">{label}</text>'])
-    lines.extend([f'<text x="30" y="200" fill="#adc2c8" font-family="Arial,sans-serif" font-size="18">Last contribution: {last}</text>', f'<text x="30" y="229" fill="#789ca3" font-family="Arial,sans-serif" font-size="14">GitHub public calendar · generated {generated} UTC · rolling yearly window</text>', '</svg>'])
+    lines.extend([f'<text x="30" y="190" fill="#adc2c8" font-family="Arial,sans-serif" font-size="18">Last contribution: {last}</text>', '<text x="30" y="219" fill="#789ca3" font-family="Arial,sans-serif" font-size="14">Daily contribution intensity · oldest to newest</text>'])
+    first = date.fromisoformat(min(days))
+    start = first - timedelta(days=(first.weekday() + 1) % 7)
+    palette = ("#26343c", "#245753", "#2c8479", "#48b5a2", "#7de0ca")
+    for key, count in sorted(days.items()):
+        day = date.fromisoformat(key)
+        week = (day - start).days // 7
+        row = (day.weekday() + 1) % 7
+        shade = 0 if count == 0 else min(4, 1 + (count >= 2) + (count >= 4) + (count >= 8))
+        lines.append(f'<rect x="{30 + week * 15}" y="{240 + row * 15}" width="11" height="11" rx="2" fill="{palette[shade]}"/>')
+    lines.extend([f'<text x="30" y="362" fill="#789ca3" font-family="Arial,sans-serif" font-size="14">GitHub public calendar · generated {generated} UTC · rolling yearly window</text>', '</svg>'])
     return "\n".join(lines) + "\n"
 
 
