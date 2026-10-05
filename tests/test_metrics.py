@@ -23,9 +23,10 @@ class MetricsTests(unittest.TestCase):
         self.assertEqual(streaks(result["days"], date(2026, 10, 5)), (2, 2))
         self.assertEqual(streaks(result["days"], date(2026, 10, 6)), (2, 2))
         ET.fromstring(render_svg(result, "2026-10-05"))
+        self.assertEqual(render_svg(result, "2026-10-05").count('<rect x='), 4)
 
     def test_rejects_bad_responses(self):
-        for calendar in ({}, {"weeks": [], "totalContributions": 0}, {"weeks": [{"contributionDays": [{"date": "2026-01-01", "contributionCount": -1}]}], "totalContributions": -1}):
+        for calendar in ({}, {"weeks": [], "totalContributions": 0}, {"weeks": [{}], "totalContributions": 0}, {"weeks": [{"contributionDays": [{}]}], "totalContributions": 0}, {"weeks": [{"contributionDays": [{"date": "2026-01-01", "contributionCount": -1}]}], "totalContributions": -1}):
             with self.subTest(calendar=calendar), self.assertRaises(ValueError):
                 parse_calendar(calendar)
 
