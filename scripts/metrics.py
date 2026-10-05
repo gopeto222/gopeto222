@@ -16,7 +16,7 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "activity.json"
-SVG = ROOT / "assets" / "metrics" / "activity.svg"
+SVGS = [ROOT / "assets" / "metrics" / f"activity-{lang}{suffix}.svg" for lang in ("en", "bg") for suffix in ("", "-mobile")]
 QUERY = "query($login:String!){user(login:$login){contributionsCollection{contributionCalendar{totalContributions weeks{contributionDays{date contributionCount}}}}}}"
 
 
@@ -51,13 +51,18 @@ def parse_calendar(calendar: dict[str, Any]) -> dict[str, Any]:
         for item in week["contributionDays"]:
             if not isinstance(item, dict) or "date" not in item or "contributionCount" not in item:
                 raise ValueError("Invalid contribution day")
+            if not isinstance(item["date"], str):
+                raise ValueError("Invalid contribution date")
             day = date.fromisoformat(item["date"])
             count = item["contributionCount"]
-            if not isinstance(count, int) or count < 0 or day.isoformat() in days:
+            if type(count) is not int or count < 0 or day.isoformat() in days:
                 raise ValueError("Invalid contribution day")
             days[day.isoformat()] = count
     if not days or sum(days.values()) != calendar.get("totalContributions"):
         raise ValueError("Calendar total mismatch")
+    ordered = sorted(date.fromisoformat(key) for key in days)
+    if any(right - left != timedelta(days=1) for left, right in zip(ordered, ordered[1:])):
+        raise ValueError("Non-contiguous contribution calendar")
     return {"total": sum(days.values()), "active_days": sum(n > 0 for n in days.values()), "days": dict(sorted(days.items()))}
 
 
@@ -74,29 +79,52 @@ def streaks(days: dict[str, int], today: date) -> tuple[int, int]:
     return current, longest
 
 
-def render_svg(data: dict[str, Any], generated: str) -> str:
+def render_svg(data: dict[str, Any], generated: str, lang: str = "en", mobile: bool = False) -> str:
+    """Render a responsive activity dashboard from GitHub's calendar."""
     days = data["days"]
     current, longest = streaks(days, date.fromisoformat(generated))
-    last = max((key for key, value in days.items() if value), default="No public activity")
+    bg = lang == "bg"
+    labels = ("ПРИНОСИ", "АКТИВНИ ДНИ", "ТЕКУЩА ПОРЕДИЦА", "НАЙ-ДЪЛГА ПОРЕДИЦА") if bg else ("CONTRIBUTIONS", "ACTIVE DAYS", "CURRENT STREAK", "LONGEST STREAK")
+    last = max((key for key, value in days.items() if value), default="—")
+    width, height = (600, 650) if mobile else (1200, 455)
     lines = [
-        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 375" role="img" aria-labelledby="t d">',
-        '<title id="t">GitHub activity</title><desc id="d">Public contribution calendar summary</desc>',
-        '<rect width="900" height="375" rx="18" fill="#151b23"/>',
-        '<text x="30" y="43" fill="#69d2c7" font-family="Arial,sans-serif" font-size="18">GITHUB ACTIVITY</text>',
+        f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" role="img" aria-labelledby="t d">',
+        '<title id="t">Development activity</title><desc id="d">Public GitHub contribution calendar with totals and daily intensity</desc>',
+        f'<rect width="{width}" height="{height}" rx="24" fill="#0b111b"/>',
+        f'<rect x="1" y="1" width="{width-2}" height="{height-2}" rx="23" fill="none" stroke="#345065"/>',
+        f'<text x="30" y="44" fill="#68e2e6" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="2">{("08 / АКТИВНОСТ" if bg else "08 / DEVELOPMENT ACTIVITY")}</text>',
     ]
-    for x, label, value in [(30, "CONTRIBUTIONS", data["total"]), (245, "ACTIVE DAYS", data["active_days"]), (460, "CURRENT STREAK", current), (675, "LONGEST STREAK", longest)]:
-        lines.extend([f'<text x="{x}" y="105" fill="#f0f6f8" font-family="Arial,sans-serif" font-size="42" font-weight="700">{value}</text>', f'<text x="{x}" y="133" fill="#adc2c8" font-family="Arial,sans-serif" font-size="14">{label}</text>'])
-    lines.extend([f'<text x="30" y="190" fill="#adc2c8" font-family="Arial,sans-serif" font-size="18">Last contribution: {last}</text>', '<text x="30" y="219" fill="#789ca3" font-family="Arial,sans-serif" font-size="14">Daily contribution intensity · oldest to newest</text>'])
-    first = date.fromisoformat(min(days))
+    values = (data["total"], data["active_days"], current, longest)
+    for i, (label, value) in enumerate(zip(labels, values)):
+        if mobile:
+            x, y, card_w = 30 + (i % 2) * 274, 74 + (i // 2) * 132, 260
+        else:
+            x, y, card_w = 30 + i * 290, 78, 270
+        lines += [
+            f'<rect x="{x}" y="{y}" width="{card_w}" height="110" rx="13" fill="#142434" stroke="#36586b"/>',
+            f'<text x="{x+17}" y="{y+33}" fill="#a7bfce" font-family="Arial,sans-serif" font-size="{13 if mobile else 15}" font-weight="700">{label}</text>',
+            f'<text x="{x+17}" y="{y+83}" fill="#eef6fc" font-family="Arial,sans-serif" font-size="44" font-weight="700">{value}</text>',
+        ]
+    heading_y = 365 if mobile else 243
+    lines.append(f'<text x="30" y="{heading_y}" fill="#a7bfce" font-family="Arial,sans-serif" font-size="16">{("Последен принос: " if bg else "Last contribution: ")}{last}</text>')
+    selected = sorted(days.items())[-182:] if mobile else sorted(days.items())
+    first = date.fromisoformat(selected[0][0])
     start = first - timedelta(days=(first.weekday() + 1) % 7)
-    palette = ("#26343c", "#245753", "#2c8479", "#48b5a2", "#7de0ca")
-    for key, count in sorted(days.items()):
+    cell = 18 if mobile else 15
+    palette = ("#223444", "#235b67", "#298399", "#42b7c6", "#79e4e4")
+    top = 390 if mobile else 268
+    for key, count in selected:
         day = date.fromisoformat(key)
         week = (day - start).days // 7
         row = (day.weekday() + 1) % 7
         shade = 0 if count == 0 else min(4, 1 + (count >= 2) + (count >= 4) + (count >= 8))
-        lines.append(f'<rect x="{30 + week * 15}" y="{240 + row * 15}" width="11" height="11" rx="2" fill="{palette[shade]}"/>')
-    lines.extend([f'<text x="30" y="362" fill="#789ca3" font-family="Arial,sans-serif" font-size="14">GitHub public calendar · generated {generated} UTC · rolling yearly window</text>', '</svg>'])
+        lines.append(f'<rect x="{30 + week * cell}" y="{top + row * cell}" width="{cell-4}" height="{cell-4}" rx="2" fill="{palette[shade]}"/>')
+    window = "26 weeks shown / totals for rolling year" if mobile else "Rolling yearly window"
+    if bg:
+        window = "26 седмици / годишни общи данни" if mobile else "Последните 12 месеца"
+    lines.append(f'<text x="30" y="{height-57}" fill="#a7bfce" font-family="Arial,sans-serif" font-size="15">{window}</text>')
+    lines.append(f'<text x="30" y="{height-27}" fill="#7294a9" font-family="Arial,sans-serif" font-size="14">GitHub public calendar · {generated} UTC</text>')
+    lines.append('</svg>')
     return "\n".join(lines) + "\n"
 
 
@@ -117,7 +145,8 @@ def main() -> None:
         parsed = parse_calendar({"weeks": [{"contributionDays": [{"date": key, "contributionCount": value} for key, value in stored["days"].items()]}], "totalContributions": stored["total"]})
         if parsed != stored:
             raise ValueError("Invalid generated JSON")
-        ET.parse(SVG)
+        for path in SVGS:
+            ET.parse(path)
         return
     token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
     if not token:
@@ -125,7 +154,10 @@ def main() -> None:
     data = parse_calendar(request_calendar("gopeto222", token))
     today = datetime.now(timezone.utc).date().isoformat()
     atomic_write(DATA, json.dumps(data, indent=2, sort_keys=True) + "\n")
-    atomic_write(SVG, render_svg(data, today))
+    for lang in ("en", "bg"):
+        for mobile in (False, True):
+            suffix = "-mobile" if mobile else ""
+            atomic_write(ROOT / "assets" / "metrics" / f"activity-{lang}{suffix}.svg", render_svg(data, today, lang, mobile))
 
 
 if __name__ == "__main__":

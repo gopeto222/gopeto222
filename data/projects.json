@@ -1,0 +1,634 @@
+{
+  "schemaVersion": 1,
+  "account": "gopeto222",
+  "auditDate": "2026-10-05",
+  "scope": "Accessible GitHub repositories with personal ownership or observed authored contributions",
+  "projects": [
+    {
+      "id": "project-01",
+      "name": "Business registry",
+      "repository": null,
+      "owner": "AstroByte Development",
+      "organization": true,
+      "ownership": "organization",
+      "visibility": "private",
+      "description": "Business registry; details intentionally limited for private source.",
+      "category": "FiveM systems",
+      "languages": [
+        "Lua",
+        "JavaScript",
+        "CSS",
+        "HTML"
+      ],
+      "technologies": [
+        "Lua",
+        "Qbox",
+        "MySQL"
+      ],
+      "contributionEvidence": {
+        "authoredCommitsObserved": 1,
+        "authoredPullRequestsObserved": 0,
+        "method": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history"
+      },
+      "myContribution": "Authored commits observed; specific component ownership is not inferred from repository membership.",
+      "status": "Private",
+      "featured": true,
+      "publicDisplayAllowed": true,
+      "screenshots": [],
+      "architecture": "assets/projects/registry.svg",
+      "lastActivity": "2026-08-10"
+    },
+    {
+      "id": "project-02",
+      "name": "Armor plate resource",
+      "repository": null,
+      "owner": "AstroByte Development",
+      "organization": true,
+      "ownership": "organization",
+      "visibility": "private",
+      "description": "Armor plate resource; details intentionally limited for private source.",
+      "category": "FiveM systems",
+      "languages": [
+        "Lua"
+      ],
+      "technologies": [
+        "Lua"
+      ],
+      "contributionEvidence": {
+        "authoredCommitsObserved": 1,
+        "authoredPullRequestsObserved": 0,
+        "method": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history"
+      },
+      "myContribution": "Authored commits observed; specific component ownership is not inferred from repository membership.",
+      "status": "Private",
+      "featured": false,
+      "publicDisplayAllowed": true,
+      "screenshots": [],
+      "architecture": null,
+      "lastActivity": "2026-09-21"
+    },
+    {
+      "id": "project-03",
+      "name": "DMV tablet system",
+      "repository": null,
+      "owner": "AstroByte Development",
+      "organization": true,
+      "ownership": "organization",
+      "visibility": "private",
+      "description": "DMV tablet system; details intentionally limited for private source.",
+      "category": "FiveM systems",
+      "languages": [
+        "Lua",
+        "JavaScript",
+        "CSS",
+        "HTML"
+      ],
+      "technologies": [
+        "Lua",
+        "Qbox",
+        "MySQL",
+        "NUI"
+      ],
+      "contributionEvidence": {
+        "authoredCommitsObserved": 2,
+        "authoredPullRequestsObserved": 0,
+        "method": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history"
+      },
+      "myContribution": "Authored commits observed; specific component ownership is not inferred from repository membership.",
+      "status": "Private",
+      "featured": true,
+      "publicDisplayAllowed": true,
+      "screenshots": [],
+      "architecture": "assets/projects/dmv.svg",
+      "lastActivity": "2026-08-10"
+    },
+    {
+      "id": "project-04",
+      "name": "Document resource",
+      "repository": null,
+      "owner": "AstroByte Development",
+      "organization": true,
+      "ownership": "organization",
+      "visibility": "private",
+      "description": "Document resource; details intentionally limited for private source.",
+      "category": "FiveM systems",
+      "languages": [
+        "Lua",
+        "JavaScript",
+        "CSS",
+        "HTML"
+      ],
+      "technologies": [
+        "Lua",
+        "NUI"
+      ],
+      "contributionEvidence": {
+        "authoredCommitsObserved": 1,
+        "authoredPullRequestsObserved": 0,
+        "method": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history"
+      },
+      "myContribution": "Authored commits observed; specific component ownership is not inferred from repository membership.",
+      "status": "Private",
+      "featured": false,
+      "publicDisplayAllowed": true,
+      "screenshots": [],
+      "architecture": null,
+      "lastActivity": "2026-08-10"
+    },
+    {
+      "id": "project-05",
+      "name": "Pawnshop resource",
+      "repository": null,
+      "owner": "AstroByte Development",
+      "organization": true,
+      "ownership": "organization",
+      "visibility": "private",
+      "description": "Pawnshop resource; details intentionally limited for private source.",
+      "category": "FiveM systems",
+      "languages": [
+        "Lua"
+      ],
+      "technologies": [
+        "Lua"
+      ],
+      "contributionEvidence": {
+        "authoredCommitsObserved": 1,
+        "authoredPullRequestsObserved": 0,
+        "method": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history"
+      },
+      "myContribution": "Authored commits observed; specific component ownership is not inferred from repository membership.",
+      "status": "Private",
+      "featured": false,
+      "publicDisplayAllowed": true,
+      "screenshots": [],
+      "architecture": null,
+      "lastActivity": "2026-09-21"
+    },
+    {
+      "id": "project-06",
+      "name": "Police equipment resource",
+      "repository": null,
+      "owner": "AstroByte Development",
+      "organization": true,
+      "ownership": "organization",
+      "visibility": "private",
+      "description": "Police equipment resource; details intentionally limited for private source.",
+      "category": "FiveM systems",
+      "languages": [
+        "Lua"
+      ],
+      "technologies": [
+        "Lua"
+      ],
+      "contributionEvidence": {
+        "authoredCommitsObserved": 1,
+        "authoredPullRequestsObserved": 0,
+        "method": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history"
+      },
+      "myContribution": "Authored commits observed; specific component ownership is not inferred from repository membership.",
+      "status": "Private",
+      "featured": false,
+      "publicDisplayAllowed": true,
+      "screenshots": [],
+      "architecture": null,
+      "lastActivity": "2026-08-10"
+    },
+    {
+      "id": "project-07",
+      "name": "Police boat resource",
+      "repository": null,
+      "owner": "AstroByte Development",
+      "organization": true,
+      "ownership": "organization",
+      "visibility": "private",
+      "description": "Police boat resource; details intentionally limited for private source.",
+      "category": "FiveM systems",
+      "languages": [
+        "Lua"
+      ],
+      "technologies": [
+        "Lua"
+      ],
+      "contributionEvidence": {
+        "authoredCommitsObserved": 1,
+        "authoredPullRequestsObserved": 0,
+        "method": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history"
+      },
+      "myContribution": "Authored commits observed; specific component ownership is not inferred from repository membership.",
+      "status": "Private",
+      "featured": false,
+      "publicDisplayAllowed": true,
+      "screenshots": [],
+      "architecture": null,
+      "lastActivity": "2026-08-10"
+    },
+    {
+      "id": "project-08",
+      "name": "Small robberies resource",
+      "repository": null,
+      "owner": "AstroByte Development",
+      "organization": true,
+      "ownership": "organization",
+      "visibility": "private",
+      "description": "Small robberies resource; details intentionally limited for private source.",
+      "category": "FiveM systems",
+      "languages": [
+        "Lua",
+        "JavaScript",
+        "CSS",
+        "HTML"
+      ],
+      "technologies": [
+        "Lua",
+        "NUI"
+      ],
+      "contributionEvidence": {
+        "authoredCommitsObserved": 2,
+        "authoredPullRequestsObserved": 0,
+        "method": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history"
+      },
+      "myContribution": "Authored commits observed; specific component ownership is not inferred from repository membership.",
+      "status": "Private",
+      "featured": false,
+      "publicDisplayAllowed": true,
+      "screenshots": [],
+      "architecture": null,
+      "lastActivity": "2026-08-11"
+    },
+    {
+      "id": "project-09",
+      "name": "Traffic resource",
+      "repository": null,
+      "owner": "AstroByte Development",
+      "organization": true,
+      "ownership": "organization",
+      "visibility": "private",
+      "description": "Traffic resource; details intentionally limited for private source.",
+      "category": "FiveM systems",
+      "languages": [
+        "Lua",
+        "Python"
+      ],
+      "technologies": [
+        "Lua",
+        "Python"
+      ],
+      "contributionEvidence": {
+        "authoredCommitsObserved": 1,
+        "authoredPullRequestsObserved": 0,
+        "method": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history"
+      },
+      "myContribution": "Authored commits observed; specific component ownership is not inferred from repository membership.",
+      "status": "Private",
+      "featured": false,
+      "publicDisplayAllowed": true,
+      "screenshots": [],
+      "architecture": null,
+      "lastActivity": "2026-09-21"
+    },
+    {
+      "id": "project-10",
+      "name": "Vehicle identification resource",
+      "repository": null,
+      "owner": "AstroByte Development",
+      "organization": true,
+      "ownership": "organization",
+      "visibility": "private",
+      "description": "Vehicle identification resource; details intentionally limited for private source.",
+      "category": "FiveM systems",
+      "languages": [
+        "Lua"
+      ],
+      "technologies": [
+        "Lua"
+      ],
+      "contributionEvidence": {
+        "authoredCommitsObserved": 1,
+        "authoredPullRequestsObserved": 0,
+        "method": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history"
+      },
+      "myContribution": "Authored commits observed; specific component ownership is not inferred from repository membership.",
+      "status": "Private",
+      "featured": false,
+      "publicDisplayAllowed": true,
+      "screenshots": [],
+      "architecture": null,
+      "lastActivity": "2026-08-10"
+    },
+    {
+      "id": "project-11",
+      "name": "Development documentation",
+      "repository": null,
+      "owner": "AstroByte Development",
+      "organization": true,
+      "ownership": "organization",
+      "visibility": "private",
+      "description": "Development documentation; details intentionally limited for private source.",
+      "category": "Engineering operations",
+      "languages": [],
+      "technologies": [],
+      "contributionEvidence": {
+        "authoredCommitsObserved": 7,
+        "authoredPullRequestsObserved": 0,
+        "method": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history"
+      },
+      "myContribution": "Authored commits observed; specific component ownership is not inferred from repository membership.",
+      "status": "Private",
+      "featured": false,
+      "publicDisplayAllowed": true,
+      "screenshots": [],
+      "architecture": null,
+      "lastActivity": "2026-09-04"
+    },
+    {
+      "id": "project-12",
+      "name": "AstroByte CodeGuard",
+      "repository": null,
+      "owner": "gopeto222",
+      "organization": false,
+      "ownership": "personal",
+      "visibility": "private",
+      "description": "AstroByte CodeGuard; details intentionally limited for private source.",
+      "category": "Developer tools",
+      "languages": [
+        "Rust",
+        "TypeScript",
+        "CSS",
+        "Lua"
+      ],
+      "technologies": [
+        "Rust",
+        "Tauri 2",
+        "React",
+        "TypeScript",
+        "OpenAI",
+        "Anthropic"
+      ],
+      "contributionEvidence": {
+        "authoredCommitsObserved": 1,
+        "authoredPullRequestsObserved": 0,
+        "method": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history"
+      },
+      "myContribution": "Repository under my account; authored activity observed.",
+      "status": "Private",
+      "featured": true,
+      "publicDisplayAllowed": true,
+      "screenshots": [],
+      "architecture": "assets/projects/codeguard.svg",
+      "lastActivity": "2026-10-04"
+    },
+    {
+      "id": "project-13",
+      "name": "Voltage system resource",
+      "repository": null,
+      "owner": "gopeto222",
+      "organization": false,
+      "ownership": "personal",
+      "visibility": "private",
+      "description": "Voltage system resource; details intentionally limited for private source.",
+      "category": "FiveM systems",
+      "languages": [
+        "Lua"
+      ],
+      "technologies": [
+        "Lua"
+      ],
+      "contributionEvidence": {
+        "authoredCommitsObserved": 2,
+        "authoredPullRequestsObserved": 0,
+        "method": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history"
+      },
+      "myContribution": "Repository under my account; authored activity observed.",
+      "status": "Private",
+      "featured": false,
+      "publicDisplayAllowed": true,
+      "screenshots": [],
+      "architecture": null,
+      "lastActivity": "2026-06-14"
+    },
+    {
+      "id": "project-14",
+      "name": "Rules administration platform",
+      "repository": null,
+      "owner": "gopeto222",
+      "organization": false,
+      "ownership": "personal",
+      "visibility": "private",
+      "description": "Rules administration platform; details intentionally limited for private source.",
+      "category": "Web systems",
+      "languages": [
+        "TypeScript",
+        "JavaScript"
+      ],
+      "technologies": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "PostgreSQL",
+        "Prisma"
+      ],
+      "contributionEvidence": {
+        "authoredCommitsObserved": 6,
+        "authoredPullRequestsObserved": 0,
+        "method": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history"
+      },
+      "myContribution": "Repository under my account; authored activity observed.",
+      "status": "Private",
+      "featured": true,
+      "publicDisplayAllowed": true,
+      "screenshots": [],
+      "architecture": "assets/projects/rules.svg",
+      "lastActivity": "2026-08-05"
+    },
+    {
+      "id": "project-15",
+      "name": "Engineering profile",
+      "repository": "gopeto222/gopeto222",
+      "owner": "gopeto222",
+      "organization": false,
+      "ownership": "personal",
+      "visibility": "public",
+      "description": "Public profile automation and presentation.",
+      "category": "Developer tools",
+      "languages": [
+        "Python"
+      ],
+      "technologies": [
+        "Python",
+        "GitHub Actions"
+      ],
+      "contributionEvidence": {
+        "authoredCommitsObserved": 6,
+        "authoredPullRequestsObserved": 2,
+        "method": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history"
+      },
+      "myContribution": "Repository under my account; authored activity observed.",
+      "status": "Public",
+      "featured": false,
+      "publicDisplayAllowed": true,
+      "screenshots": [],
+      "architecture": null,
+      "lastActivity": "2026-10-05"
+    },
+    {
+      "id": "project-16",
+      "name": "Fishing resource",
+      "repository": null,
+      "owner": "gopeto222",
+      "organization": false,
+      "ownership": "personal",
+      "visibility": "private",
+      "description": "Fishing resource; details intentionally limited for private source.",
+      "category": "FiveM systems",
+      "languages": [
+        "Lua",
+        "CSS",
+        "JavaScript",
+        "HTML"
+      ],
+      "technologies": [
+        "Lua",
+        "NUI"
+      ],
+      "contributionEvidence": {
+        "authoredCommitsObserved": 1,
+        "authoredPullRequestsObserved": 0,
+        "method": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history"
+      },
+      "myContribution": "Repository under my account; authored activity observed.",
+      "status": "Private",
+      "featured": false,
+      "publicDisplayAllowed": true,
+      "screenshots": [],
+      "architecture": null,
+      "lastActivity": "2025-08-21"
+    },
+    {
+      "id": "project-17",
+      "name": "Game environment integration collection",
+      "repository": null,
+      "owner": "gopeto222",
+      "organization": false,
+      "ownership": "personal",
+      "visibility": "private",
+      "description": "Game environment integration collection; details intentionally limited for private source.",
+      "category": "FiveM systems",
+      "languages": [
+        "Lua",
+        "JavaScript",
+        "HTML"
+      ],
+      "technologies": [
+        "Lua"
+      ],
+      "contributionEvidence": {
+        "authoredCommitsObserved": 52,
+        "authoredPullRequestsObserved": 0,
+        "method": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history"
+      },
+      "myContribution": "Repository under my account; authored activity observed.",
+      "status": "Private",
+      "featured": false,
+      "publicDisplayAllowed": true,
+      "screenshots": [],
+      "architecture": null,
+      "lastActivity": "2026-09-02"
+    },
+    {
+      "id": "project-18",
+      "name": "Crime system resource",
+      "repository": null,
+      "owner": "gopeto222",
+      "organization": false,
+      "ownership": "personal",
+      "visibility": "private",
+      "description": "Crime system resource; details intentionally limited for private source.",
+      "category": "FiveM systems",
+      "languages": [
+        "Lua",
+        "JavaScript",
+        "HTML"
+      ],
+      "technologies": [
+        "Lua",
+        "NUI"
+      ],
+      "contributionEvidence": {
+        "authoredCommitsObserved": 1,
+        "authoredPullRequestsObserved": 0,
+        "method": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history"
+      },
+      "myContribution": "Repository under my account; authored activity observed.",
+      "status": "Private",
+      "featured": false,
+      "publicDisplayAllowed": true,
+      "screenshots": [],
+      "architecture": null,
+      "lastActivity": "2026-08-12"
+    },
+    {
+      "id": "project-19",
+      "name": "FiveM server resource collection",
+      "repository": null,
+      "owner": "gopeto222",
+      "organization": false,
+      "ownership": "personal",
+      "visibility": "private",
+      "description": "FiveM server resource collection; details intentionally limited for private source.",
+      "category": "FiveM systems",
+      "languages": [
+        "Lua",
+        "HTML"
+      ],
+      "technologies": [
+        "Lua"
+      ],
+      "contributionEvidence": {
+        "authoredCommitsObserved": 2,
+        "authoredPullRequestsObserved": 0,
+        "method": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history"
+      },
+      "myContribution": "Repository under my account; authored activity observed.",
+      "status": "Private",
+      "featured": false,
+      "publicDisplayAllowed": true,
+      "screenshots": [],
+      "architecture": null,
+      "lastActivity": "2026-09-30"
+    },
+    {
+      "id": "project-20",
+      "name": "Collaborative FiveM server infrastructure",
+      "repository": null,
+      "owner": "External collaborator",
+      "organization": false,
+      "ownership": "collaborative",
+      "visibility": "private",
+      "description": "Collaborative FiveM server infrastructure; details intentionally limited for private source.",
+      "category": "FiveM systems",
+      "languages": [
+        "Lua",
+        "JavaScript",
+        "CSS",
+        "HTML"
+      ],
+      "technologies": [
+        "Lua",
+        "TypeScript",
+        "Vue"
+      ],
+      "contributionEvidence": {
+        "authoredCommitsObserved": 44,
+        "authoredPullRequestsObserved": 0,
+        "method": "GitHub API authored commits on accessible branches and authored pull requests; counts may omit inaccessible history"
+      },
+      "myContribution": "Authored commits observed; specific component ownership is not inferred from repository membership.",
+      "status": "Private",
+      "featured": true,
+      "publicDisplayAllowed": true,
+      "screenshots": [],
+      "architecture": "assets/projects/collaboration.svg",
+      "lastActivity": "2026-09-10"
+    }
+  ]
+}

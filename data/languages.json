@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "auditDate": "2026-10-05",
+  "measurement": "Source-file touches in authored non-merge commits observed on accessible branches; a file touched in two commits counts twice. This does not measure code ownership, skill or repository language bytes.",
+  "repositoriesAnalyzed": 19,
+  "commitsAnalyzed": 125,
+  "commitDetailsUnavailable": 0,
+  "languages": {
+    "Lua": 985,
+    "TypeScript": 104,
+    "JavaScript": 27,
+    "CSS": 22,
+    "HTML": 20,
+    "SQL": 16,
+    "Python": 2
+  }
+}
