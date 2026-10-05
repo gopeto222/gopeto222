@@ -9,7 +9,7 @@ I build local developer tools, administrative web software and FiveM systems. Th
 <a id="engineering"></a>
 <img src="assets/generated/chapter-engineering-en.svg" alt="Engineering" width="100%">
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/command-en-mobile.svg"><img src="assets/generated/command-en.svg" alt="Engineering dashboard with verified domains and practice" width="100%"></picture>
+<picture><source media="(max-width: 650px)" srcset="assets/generated/command-en-mobile.svg"><img src="assets/generated/command-en.svg" alt="Dashboard of verified domains and engineering practice" width="100%"></picture>
 
 <a id="featured"></a>
 <img src="assets/generated/chapter-featured-en.svg" alt="Selected systems" width="100%">

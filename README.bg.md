@@ -1,6 +1,6 @@
 <!-- Generated from data/profile.json and data/projects.json by scripts/build_readmes.py. -->
 
-<a href="README.md" title="Към английската версия"><picture><source media="(max-width: 650px)" srcset="assets/generated/hero-bg-mobile.svg"><img src="assets/generated/hero-bg.svg" alt="Към английската версия; AstroByte engineering portfolio" width="100%"></picture></a>
+<a href="README.md" title="Към английската версия"><picture><source media="(max-width: 650px)" srcset="assets/generated/hero-bg-mobile.svg"><img src="assets/generated/hero-bg.svg" alt="Към английската версия; инженерно портфолио AstroByte" width="100%"></picture></a>
 
 <p align="center"><a href="#featured">Основни системи</a> · <a href="#archive">Всички проекти</a> · <a href="#technology">Технологии</a> · <a href="#activity">Активност</a> · <a href="#contact">Контакт</a></p>
 
@@ -9,7 +9,7 @@
 <a id="engineering"></a>
 <img src="assets/generated/chapter-engineering-bg.svg" alt="Инженерен профил" width="100%">
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/command-bg-mobile.svg"><img src="assets/generated/command-bg.svg" alt="Инженерен профил dashboard with verified domains and practice" width="100%"></picture>
+<picture><source media="(max-width: 650px)" srcset="assets/generated/command-bg-mobile.svg"><img src="assets/generated/command-bg.svg" alt="Табло с проверени области и инженерни практики" width="100%"></picture>
 
 <a id="featured"></a>
 <img src="assets/generated/chapter-featured-bg.svg" alt="Основни системи" width="100%">
@@ -93,19 +93,19 @@
 
 #### Инструменти
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/archive-tools-bg-mobile.svg"><img src="assets/generated/archive-tools-bg.svg" alt="Инструменти project inventory with role and availability" width="100%"></picture>
+<picture><source media="(max-width: 650px)" srcset="assets/generated/archive-tools-bg-mobile.svg"><img src="assets/generated/archive-tools-bg.svg" alt="Инструменти: проекти с роля и достъпност" width="100%"></picture>
 
 #### Инженерни процеси
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/archive-operations-bg-mobile.svg"><img src="assets/generated/archive-operations-bg.svg" alt="Инженерни процеси project inventory with role and availability" width="100%"></picture>
+<picture><source media="(max-width: 650px)" srcset="assets/generated/archive-operations-bg-mobile.svg"><img src="assets/generated/archive-operations-bg.svg" alt="Инженерни процеси: проекти с роля и достъпност" width="100%"></picture>
 
 #### FiveM системи
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/archive-fivem-bg-mobile.svg"><img src="assets/generated/archive-fivem-bg.svg" alt="FiveM системи project inventory with role and availability" width="100%"></picture>
+<picture><source media="(max-width: 650px)" srcset="assets/generated/archive-fivem-bg-mobile.svg"><img src="assets/generated/archive-fivem-bg.svg" alt="FiveM системи: проекти с роля и достъпност" width="100%"></picture>
 
 #### Уеб системи
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/archive-web-bg-mobile.svg"><img src="assets/generated/archive-web-bg.svg" alt="Уеб системи project inventory with role and availability" width="100%"></picture>
+<picture><source media="(max-width: 650px)" srcset="assets/generated/archive-web-bg-mobile.svg"><img src="assets/generated/archive-web-bg.svg" alt="Уеб системи: проекти с роля и достъпност" width="100%"></picture>
 
 [Публичен код: хранилището на този профил](https://github.com/gopeto222/gopeto222).
 
@@ -128,25 +128,25 @@
 
 #### AstroByte CodeGuard
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/architecture-codeguard-bg-mobile.svg"><img src="assets/generated/architecture-codeguard-bg.svg" alt="AstroByte CodeGuard architecture diagram" width="100%"></picture>
+<picture><source media="(max-width: 650px)" srcset="assets/generated/architecture-codeguard-bg-mobile.svg"><img src="assets/generated/architecture-codeguard-bg.svg" alt="AstroByte CodeGuard: архитектурна схема" width="100%"></picture>
 
 #### Платформа за правила
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/architecture-rules-bg-mobile.svg"><img src="assets/generated/architecture-rules-bg.svg" alt="Платформа за правила architecture diagram" width="100%"></picture>
+<picture><source media="(max-width: 650px)" srcset="assets/generated/architecture-rules-bg-mobile.svg"><img src="assets/generated/architecture-rules-bg.svg" alt="Платформа за правила: архитектурна схема" width="100%"></picture>
 
 #### DMV таблет
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/architecture-dmv-bg-mobile.svg"><img src="assets/generated/architecture-dmv-bg.svg" alt="DMV таблет architecture diagram" width="100%"></picture>
+<picture><source media="(max-width: 650px)" srcset="assets/generated/architecture-dmv-bg-mobile.svg"><img src="assets/generated/architecture-dmv-bg.svg" alt="DMV таблет: архитектурна схема" width="100%"></picture>
 
 <details><summary>Още архитектурни схеми</summary>
 
 #### Бизнес регистър
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/architecture-registry-bg-mobile.svg"><img src="assets/generated/architecture-registry-bg.svg" alt="Бизнес регистър architecture diagram" width="100%"></picture>
+<picture><source media="(max-width: 650px)" srcset="assets/generated/architecture-registry-bg-mobile.svg"><img src="assets/generated/architecture-registry-bg.svg" alt="Бизнес регистър: архитектурна схема" width="100%"></picture>
 
 #### Съвместна FiveM инфраструктура
 
-<picture><source media="(max-width: 650px)" srcset="assets/generated/architecture-collaboration-bg-mobile.svg"><img src="assets/generated/architecture-collaboration-bg.svg" alt="Съвместна FiveM инфраструктура architecture diagram" width="100%"></picture>
+<picture><source media="(max-width: 650px)" srcset="assets/generated/architecture-collaboration-bg-mobile.svg"><img src="assets/generated/architecture-collaboration-bg.svg" alt="Съвместна FiveM инфраструктура: архитектурна схема" width="100%"></picture>
 
 </details>
 
@@ -178,6 +178,6 @@
 
 Имате идея за инструмент, платформа или система? Нека започнем с конкретния проблем и разговор в GitHub.
 
-<a href="https://github.com/gopeto222" title="Свържете се с Георги в GitHub"><picture><source media="(max-width: 650px)" srcset="assets/generated/contact-bg-mobile.svg"><img src="assets/generated/contact-bg.svg" alt="Contact @gopeto222 on GitHub" width="100%"></picture></a>
+<a href="https://github.com/gopeto222" title="Свържете се с Георги в GitHub"><picture><source media="(max-width: 650px)" srcset="assets/generated/contact-bg-mobile.svg"><img src="assets/generated/contact-bg.svg" alt="Контакт с @gopeto222 в GitHub" width="100%"></picture></a>
 
 <sub>AstroByte Development · Георги Канчев · <a href="README.md">Към английската версия</a></sub>

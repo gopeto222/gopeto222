@@ -44,11 +44,11 @@ def render(lang: str, profile: dict, inventory: dict) -> str:
         'bg':{'engineering':'Инженерен профил','featured':'Основни системи','archive':'Всички проекти','fivem':'FiveM инженерство','technology':'Технологии','architecture':'Архитектура','activity':'Активност','practice':'Как разработвам','services':'Съвместна работа','contact':'Контакт'},
     }[lang]
     parts=['<!-- Generated from data/profile.json and data/projects.json by scripts/build_readmes.py. -->']
-    parts.append(f'<a href="{other}" title="{switch}">{picture("hero",lang,switch+"; AstroByte engineering portfolio")}</a>')
+    parts.append(f'<a href="{other}" title="{switch}">{picture("hero",lang,switch+("; AstroByte engineering portfolio" if lang=="en" else "; инженерно портфолио AstroByte"))}</a>')
     parts.append('<p align="center">'+' · '.join(f'<a href="#{key}">{title}</a>' for key,title in labels.items() if key in ('featured','archive','technology','activity','contact'))+'</p>')
     parts.append(copy['intro'])
     parts.append(chapter('engineering',lang,labels['engineering']))
-    parts.append(picture('command',lang,labels['engineering']+' dashboard with verified domains and practice'))
+    parts.append(picture('command',lang,('Dashboard of verified domains and engineering practice' if lang=='en' else 'Табло с проверени области и инженерни практики')))
     parts.append(chapter('featured',lang,labels['featured']))
     parts.append(('Selected work is described from repository evidence. Private sources remain private.' if lang=='en' else 'Подбраните проекти са описани според проверените хранилища. Частният код остава частен.'))
     for key,case in profile['caseStudies'].items():
@@ -59,7 +59,7 @@ def render(lang: str, profile: dict, inventory: dict) -> str:
                   f"{summary['includedRepositories']} проверени проекта от {summary['accessibleRepositories']} достъпни хранилища. {summary['excludedWithoutAuthorshipEvidence']} организационни хранилища са изключени, защото не е установен авторски принос. Личните, организационните и съвместните проекти са обозначени отделно. [Метод на одита](docs/discovery.md)."))
     for slug,title_en,title_bg in [('tools','Developer tools','Инструменти'),('operations','Engineering operations','Инженерни процеси'),('fivem','FiveM systems','FiveM системи'),('web','Web systems','Уеб системи')]:
         title=title_en if lang=='en' else title_bg
-        parts.append(f'#### {title}\n\n'+picture(f'archive-{slug}',lang,title+' project inventory with role and availability'))
+        parts.append(f'#### {title}\n\n'+picture(f'archive-{slug}',lang,title+(' project inventory with role and availability' if lang=='en' else ': проекти с роля и достъпност')))
     parts.append(('[Public source: this profile repository](https://github.com/gopeto222/gopeto222).' if lang=='en' else '[Публичен код: хранилището на този профил](https://github.com/gopeto222/gopeto222).'))
     parts.append(chapter('fivem',lang,labels['fivem']))
     parts.append(picture('fivem',lang,'FiveM client, server and persistence topology' if lang=='en' else 'FiveM схема на клиент, сървър и постоянни данни'))
@@ -70,12 +70,12 @@ def render(lang: str, profile: dict, inventory: dict) -> str:
     parts.append(('The diagrams show documented components and important boundaries. Optional integrations are labeled.' if lang=='en' else 'Схемите показват документирани компоненти и важни граници. Незадължителните интеграции са обозначени.'))
     for key in ('codeguard','rules','dmv'):
         title=profile['caseStudies'][key][lang]['title']
-        parts.append(f'#### {title}\n\n'+picture(f'architecture-{key}',lang,title+' architecture diagram'))
+        parts.append(f'#### {title}\n\n'+picture(f'architecture-{key}',lang,title+(' architecture diagram' if lang=='en' else ': архитектурна схема')))
     extra='Additional architecture maps' if lang=='en' else 'Още архитектурни схеми'
     details=f'<details><summary>{extra}</summary>\n\n'
     for key in ('registry','collaboration'):
         title=profile['caseStudies'][key][lang]['title']
-        details+=f'#### {title}\n\n'+picture(f'architecture-{key}',lang,title+' architecture diagram')+'\n\n'
+        details+=f'#### {title}\n\n'+picture(f'architecture-{key}',lang,title+(' architecture diagram' if lang=='en' else ': архитектурна схема'))+'\n\n'
     parts.append(details+'</details>')
     parts.append(chapter('activity',lang,labels['activity']))
     parts.append(picture('activity',lang,'Public GitHub contribution calendar and streaks' if lang=='en' else 'Публичен календар на GitHub приносите и поредици',directory='assets/metrics'))
@@ -89,7 +89,7 @@ def render(lang: str, profile: dict, inventory: dict) -> str:
     parts.append(picture('services',lang,'Work areas supported by verified experience' if lang=='en' else 'Области на работа с потвърден опит'))
     parts.append(chapter('contact',lang,labels['contact']))
     parts.append(copy['contact'])
-    parts.append(f'<a href="{profile["contactUrl"]}" title="'+('Contact Georgi on GitHub' if lang=='en' else 'Свържете се с Георги в GitHub')+'">'+picture('contact',lang,'Contact @gopeto222 on GitHub')+'</a>')
+    parts.append(f'<a href="{profile["contactUrl"]}" title="'+('Contact Georgi on GitHub' if lang=='en' else 'Свържете се с Георги в GitHub')+'">'+picture('contact',lang,('Contact @gopeto222 on GitHub' if lang=='en' else 'Контакт с @gopeto222 в GitHub'))+'</a>')
     name='Георги Канчев' if lang=='bg' else 'Georgi Kanchev'
     parts.append(f'<sub>AstroByte Development · {name} · <a href="{other}">{switch}</a></sub>')
     return '\n\n'.join(parts)+'\n'
