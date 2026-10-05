@@ -1,59 +1,41 @@
-"""Shared visual tokens for the public profile SVG generators."""
-from __future__ import annotations
-
-BG = '#090F1B'
-SURFACE = '#111C2D'
-ELEVATED = '#17263B'
-BORDER = '#344B67'
-TEXT = '#F2F6FF'
-MUTED = '#AEC0D8'
-SOFT = '#849BB8'
+"""AstroByte visual tokens shared by every generated SVG, including metrics."""
+BACKGROUND_0 = '#080E19'
+BACKGROUND_1 = '#0D1728'
+SURFACE_0 = '#101E31'
+SURFACE_1 = '#152941'
+SURFACE_2 = '#1C3450'
+BORDER_SUBTLE = '#34506E'
+BORDER_ACTIVE = '#6684A5'
+TEXT_PRIMARY = '#F3F8FF'
+TEXT_SECONDARY = '#B5C8DD'
+TEXT_MUTED = '#8FA8C2'
 BLUE = '#3B82F6'
 CYAN = '#22D3EE'
 PURPLE = '#8B5CF6'
 VIOLET = '#A855F7'
 GREEN = '#22C55E'
-ORANGE = '#F59E0B'
+AMBER = '#F59E0B'
 RED = '#EF4444'
-SHELL_END = '#121C36'
-GRID = '#22314B'
-SELECTED = '#243F69'
-CORE = '#202956'
-PREVIEW_BLUE = '#182E4D'
-PREVIEW_ORANGE = '#192D4C'
-PREVIEW_NODE = '#274268'
-TRACK = '#243652'
 FONT = 'Arial,Helvetica,sans-serif'
-RADIUS_SMALL = 9
-RADIUS_MEDIUM = 14
-RADIUS_LARGE = 24
+MONO = 'Menlo,Consolas,monospace'
+RADIUS_SMALL = 8
+RADIUS_MEDIUM = 16
+RADIUS_LARGE = 28
 SPACE = 8
-
-PROJECT_ACCENTS = {
-    'codeguard': PURPLE,
-    'rules': BLUE,
-    'dmv': ORANGE,
-    'registry': ORANGE,
-    'collaboration': ORANGE,
-}
-CATEGORY_ACCENTS = {
-    'Developer tools': PURPLE,
-    'Engineering operations': CYAN,
-    'FiveM systems': ORANGE,
-    'Web systems': BLUE,
-}
-ARCHITECTURE_ACCENTS = {
-    'frontend': BLUE,
-    'backend': PURPLE,
-    'database': CYAN,
-    'security': RED,
-    'external': ORANGE,
-    'ai': VIOLET,
-    'infrastructure': GREEN,
-}
+TYPE = {'micro': 14, 'label': 18, 'body': 22, 'subtitle': 28, 'title': 44, 'display': 88}
+ACCENTS = {'purple': PURPLE, 'blue': BLUE, 'cyan': CYAN, 'amber': AMBER, 'green': GREEN, 'red': RED}
+CATEGORY_ACCENTS = {'Developer tools': PURPLE, 'Engineering operations': CYAN, 'FiveM systems': AMBER, 'Web systems': BLUE}
+ARCHITECTURE_ACCENTS = {'client': BLUE, 'server': PURPLE, 'data': CYAN, 'security': RED, 'external': AMBER, 'ai': VIOLET, 'infrastructure': GREEN}
 ACTIVITY_LEVELS = ('#213147', '#2856A4', BLUE, CYAN, PURPLE)
-
-
-def tinted(accent: str, opacity: float = .12) -> str:
-    """Opaque dark surface tinted by an accent; SVG opacity handles the color layer."""
-    return f'<rect width="100%" height="100%" fill="{accent}" opacity="{opacity}"/>'
+CONTROL_ACTIVE = '#264777'
+ORBIT_CORE = '#182B4F'
+# Compatibility aliases for the public activity generator.
+BG = BACKGROUND_0
+SURFACE = SURFACE_0
+ELEVATED = SURFACE_1
+BORDER = BORDER_SUBTLE
+TEXT = TEXT_PRIMARY
+MUTED = TEXT_SECONDARY
+SOFT = TEXT_MUTED
+ORANGE = AMBER
+PROJECT_ACCENTS = {'codeguard': PURPLE, 'rules': BLUE, 'dmv': AMBER, 'registry': AMBER, 'collaboration': CYAN}

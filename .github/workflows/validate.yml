@@ -18,6 +18,7 @@ jobs:
         run: |
           python3 scripts/metrics.py --validate
           python3 scripts/visuals.py
-          git diff --exit-code -- assets/generated
+          python3 scripts/build_readmes.py
+          git diff --exit-code -- assets/generated README.md README.bg.md
       - name: SVG and local links
         run: python3 scripts/qa.py

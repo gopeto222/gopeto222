@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "brand": "AstroByte Development",
+  "name": "Georgi Kanchev",
+  "account": "gopeto222",
+  "contactUrl": "https://github.com/gopeto222",
+  "caseStudies": {
+    "codeguard": {
+      "projectId": "project-12",
+      "accent": "purple",
+      "architecture": ["Local project", "Rust scanner", "Findings", "Optional AI proposal", "Human review"],
+      "en": {
+        "title": "AstroByte CodeGuard",
+        "eyebrow": "LOCAL CODE INTELLIGENCE",
+        "problem": "Findings need source context; proposed fixes need a review and recovery path.",
+        "build": "Rust scanner and CLI with a macOS Tauri 2 / React interface. Optional OpenAI or Anthropic proposals are shown as diffs before explicit approval.",
+        "contribution": "Personal project with observed authored commits.",
+        "decision": "Local scanning, bounded and redacted AI context, Keychain credential storage, and conflict-aware revert.",
+        "status": "Private development; no public release claimed."
+      },
+      "bg": {
+        "title": "AstroByte CodeGuard",
+        "eyebrow": "ЛОКАЛЕН АНАЛИЗ НА КОД",
+        "problem": "Находките се нуждаят от контекст, а предложените поправки — от преглед и възможност за връщане.",
+        "build": "Rust скенер и CLI с macOS интерфейс чрез Tauri 2 и React. Предложенията от OpenAI или Anthropic са незадължителни и се показват като diff преди изрично одобрение.",
+        "contribution": "Личен проект с установени авторски commit-и.",
+        "decision": "Локално сканиране, ограничен и редактиран AI контекст, ключове в Keychain и връщане след проверка за конфликти.",
+        "status": "Частна разработка; не се твърди публичен релийз."
+      }
+    },
+    "rules": {
+      "projectId": "project-14",
+      "accent": "blue",
+      "architecture": ["Public reader", "Next.js", "Discord OAuth", "Editorial actions", "PostgreSQL"],
+      "en": {
+        "title": "Rules administration platform",
+        "eyebrow": "CONTROLLED PUBLISHING",
+        "problem": "Community rules need a readable public view and a controlled editorial process.",
+        "build": "Next.js, React, TypeScript, PostgreSQL and Prisma with Discord OAuth administration, drafts, revisions and audit records.",
+        "contribution": "Personal project with observed authored commits.",
+        "decision": "Server-side access checks and an auditable draft-to-publish workflow.",
+        "status": "Private source; no public demo claimed."
+      },
+      "bg": {
+        "title": "Платформа за правила",
+        "eyebrow": "КОНТРОЛИРАНО ПУБЛИКУВАНЕ",
+        "problem": "Правилата имат нужда от удобен публичен изглед и контролиран редакторски процес.",
+        "build": "Next.js, React, TypeScript, PostgreSQL и Prisma с Discord OAuth администрация, чернови, версии и одитни записи.",
+        "contribution": "Личен проект с установени авторски commit-и.",
+        "decision": "Сървърни проверки на достъпа и проследим път от чернова до публикуване.",
+        "status": "Частен код; не се твърди публично демо."
+      }
+    },
+    "dmv": {
+      "projectId": "project-03",
+      "accent": "amber",
+      "architecture": ["Player", "NUI tablet", "Lua server", "Qbox", "MySQL"],
+      "en": {
+        "title": "DMV tablet system",
+        "eyebrow": "FIVEM VEHICLE WORKFLOW",
+        "problem": "Vehicle registration needs an in-game workflow with persistent records and verifiable history.",
+        "build": "FiveM NUI tablet, Lua client/server code, Qbox integration and MySQL records. Repository documentation describes registration, plate history, QR checks and localization.",
+        "contribution": "Authored commits are observed, including a release change; this is an organization project.",
+        "decision": "The system connects client interaction to server logic and persistent data.",
+        "status": "Private organization source."
+      },
+      "bg": {
+        "title": "DMV таблет",
+        "eyebrow": "FIVEM РЕГИСТРАЦИЯ",
+        "problem": "Регистрацията на превозни средства изисква процес в играта с постоянни записи и проследима история.",
+        "build": "FiveM NUI таблет, Lua код за клиент и сървър, Qbox и MySQL. Документацията описва регистрация, история на номерата, QR проверка и локализация.",
+        "contribution": "Има авторски commit-и, включително промяна по релийз; проектът е организационен.",
+        "decision": "Системата свързва клиентския интерфейс със сървърна логика и постоянни данни.",
+        "status": "Частен организационен код."
+      }
+    },
+    "registry": {
+      "projectId": "project-01",
+      "accent": "amber",
+      "architecture": ["Tablet", "Server validation", "Business records", "Activity log"],
+      "en": {
+        "title": "Business registry",
+        "eyebrow": "RECORDS & VALIDATION",
+        "problem": "Business records and documents need a structured workflow with server checks.",
+        "build": "A Qbox tablet resource with MySQL records, localization and activity logging described by its repository.",
+        "contribution": "An authored initial commit is observed. It does not establish sole ownership of later changes.",
+        "decision": "Server-side validation protects the record flow; activity logs make changes traceable.",
+        "status": "Private organization source."
+      },
+      "bg": {
+        "title": "Бизнес регистър",
+        "eyebrow": "ЗАПИСИ И ВАЛИДАЦИЯ",
+        "problem": "Бизнес записите и документите изискват подреден процес със сървърни проверки.",
+        "build": "Qbox ресурс с таблет интерфейс, MySQL записи, локализация и журнал, описани в хранилището.",
+        "contribution": "Установен е авторски първоначален commit. Това не доказва еднолична собственост върху по-късните промени.",
+        "decision": "Сървърната валидация защитава записите, а журналът прави промените проследими.",
+        "status": "Частен организационен код."
+      }
+    },
+    "collaboration": {
+      "projectId": "project-20",
+      "accent": "cyan",
+      "architecture": ["Client", "Server resources", "Shared workflow", "Persistence"],
+      "en": {
+        "title": "Collaborative FiveM infrastructure",
+        "eyebrow": "SHARED SERVER WORK",
+        "problem": "A shared FiveM system needs coordinated resource and data changes across contributors.",
+        "build": "Accessible history shows Lua and TypeScript resource work plus a database change in a private shared repository.",
+        "contribution": "44 authored commits were observed on accessible branches. The whole system is not attributed to one person.",
+        "decision": "The portfolio labels the system as collaborative and limits its claims to observed work.",
+        "status": "Private collaborative source."
+      },
+      "bg": {
+        "title": "Съвместна FiveM инфраструктура",
+        "eyebrow": "РАБОТА ПО ОБЩ СЪРВЪР",
+        "problem": "Споделената FiveM система изисква координирани промени по ресурси и данни.",
+        "build": "В достъпната история се вижда работа по Lua и TypeScript ресурси и промяна по базата данни в частно споделено хранилище.",
+        "contribution": "Установени са 44 авторски commit-а в достъпните клонове. Цялата система не се приписва на един човек.",
+        "decision": "Портфолиото обозначава системата като съвместна и ограничава твърденията до установената работа.",
+        "status": "Частен съвместен код."
+      }
+    }
+  },
+  "copy": {
+    "en": {
+      "heroLine": "Reliable systems across software, infrastructure and game platforms.",
+      "intro": "I build local developer tools, administrative web software and FiveM systems. The work below separates personal ownership from observed contributions.",
+      "contact": "Have a tool, platform or system in mind? Start with a clear problem and a conversation on GitHub.",
+      "services": ["Developer tools", "FiveM systems", "Web administration", "Automation & AI integration"]
+    },
+    "bg": {
+      "heroLine": "Надеждни системи за софтуер, инфраструктура и игрови платформи.",
+      "intro": "Разработвам локални инструменти, уеб приложения за администрация и FiveM системи. По-долу личните проекти са разграничени от установения принос в обща работа.",
+      "contact": "Имате идея за инструмент, платформа или система? Нека започнем с конкретния проблем и разговор в GitHub.",
+      "services": ["Инструменти за разработчици", "FiveM системи", "Уеб администриране", "Автоматизация и AI интеграции"]
+    }
+  }
+}

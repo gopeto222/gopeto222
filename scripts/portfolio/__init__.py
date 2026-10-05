@@ -1,0 +1,1 @@
+"""Deterministic AstroByte profile renderer."""

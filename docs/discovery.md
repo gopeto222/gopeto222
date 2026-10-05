@@ -12,16 +12,4 @@ Private repository slugs, URLs, source text, internal endpoints and customer det
 
 ## Reference comparison
 
-The reference profile was reviewed for its bilingual flow, extensive visual sections, metrics automation and responsive assets. This portfolio uses a different graphite/cyan system, an explicit ownership model, five system-specific dashboards, a 20-record generated project matrix, contribution-aware language measurement, documented metric limits and mobile compositions for the primary assets. The reference's larger screenshot collection and promotional sections were not reused. No files, SVGs, wording or branding were copied.
-
-| Area | Reference strength | This profile's treatment |
-| --- | --- | --- |
-| Hero and visual flow | Many custom panels and a clear opening message | Original network-oriented hero, numbered sections and a command center |
-| Project depth | Screenshots and selected case studies | Five evidence-grounded system dashboards and concise contribution statements |
-| Project coverage | Curated selected work | Full 20-record matrix with ownership and visibility separated |
-| Metrics | Activity and language graphics | Public calendar dashboard plus authored-commit file-touch snapshot with stated limits |
-| Automation | Scheduled metrics update | Scheduled activity refresh, deterministic SVG generation and CI validation |
-| Responsiveness | Desktop and mobile assets | Separate mobile compositions for hero, dashboard, matrix, features, maps and activity |
-| Attribution | Project presentation | Organization and collaborative roles explicitly distinguished from personal ownership |
-
-The reference has more photographic screenshots; this profile uses diagrammatic product views because the verified project sources are private. Visual polish is judged alongside factual accuracy and safe publication.
+The detailed audit and final comparison are in [reference-audit.md](reference-audit.md). The redesign uses a distinct graphite and cyan visual system, five sourced case studies, a grouped archive of all 20 verified records, an integrated language control, responsive compositions, contribution-aware measurements, and explicit role labels. Generated diagrams are labeled as diagrams. The source audit found no suitable product captures in the selected private repositories or local CodeGuard checkout; no screenshot was invented or taken from another product.
