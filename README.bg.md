@@ -1,62 +1,108 @@
-<p align="right"><a href="README.md">English</a> · <strong>Български</strong></p>
+<p align="right"><a href="README.md">EN</a> · <strong>БГ</strong></p>
 
-<img src="assets/brand/hero.svg" alt="Георги Канчев — софтуерен разработчик, AstroByte Development" width="100%">
+<picture><source media="(max-width: 650px)" srcset="assets/generated/hero-bg-mobile.svg"><img src="assets/generated/hero-bg.svg" alt="Георги Канчев — софтуерен инженер, който изгражда инструменти, FiveM системи и уеб платформи" width="100%"></picture>
 
-<p align="center"><strong>Full-stack системи · FiveM инфраструктура · Инструменти за разработчици · Автоматизация</strong></p>
+<p align="center"><a href="#command-center">Център</a> · <a href="#featured-systems">Основни системи</a> · <a href="#all-projects">Всички проекти</a> · <a href="#architecture">Архитектура</a> · <a href="#activity">Активност</a> · <a href="#contact">Контакт</a></p>
 
-Разработвам софтуер, който свързва интерфейси, сървърна логика и работни процеси. Работата ми включва локален анализ на код, FiveM ресурси и уеб инструменти за администриране. Държа на ясни граници на доверие, поддържаеми модули и промени, които могат да се прегледат.
+<a id="command-center"></a>
+<img src="assets/generated/section-02-bg.svg" alt="02 — Център за разработка" width="100%">
 
-<p align="center"><a href="#избрани-проекти">Проекти</a> · <a href="#инженерен-подход">Подход</a> · <a href="#технологии">Технологии</a> · <a href="#активност-в-github">Активност</a> · <a href="#контакт">Контакт</a></p>
+<picture><source media="(max-width: 650px)" srcset="assets/generated/command-bg-mobile.svg"><img src="assets/generated/command-bg.svg" alt="Текущ фокус, езици и инженерни приоритети" width="100%"></picture>
 
-## Избрани проекти
+Работя по локални инструменти за разработчици, FiveM сървърни ресурси и уеб администриране. Технологиите са проверени в прегледаните хранилища; инвентарът различава личните проекти от съвместния принос.
 
-### AstroByte CodeGuard · инструмент за разработчици
+<a id="featured-systems"></a>
+<img src="assets/generated/section-03-bg.svg" alt="03 — Основни системи" width="100%">
 
-**Проблем.** Резултатът от сканиране е полезен, когато разработчикът може да провери доказателствата и безопасно да оцени предложената поправка.
+### AstroByte CodeGuard · локален анализ на код
 
-**Решение.** Локален Rust скенер и CLI захранват настолно приложение с Tauri 2, React и TypeScript. Приложението показва находки и контекст от кода и предлага незадължителни поправки чрез OpenAI или Anthropic. Промяната се показва като diff и изисква изрично одобрение. Историята на поправките поддържа проверка и защитено връщане.
+<picture><source media="(max-width: 650px)" srcset="assets/generated/feature-codeguard-bg-mobile.svg"><img src="assets/generated/feature-codeguard-bg.svg" alt="Табло на CodeGuard с анализ, находки, преглед на AI поправки и защитено връщане" width="100%"></picture>
 
-**Архитектура.** `проект → Rust скенер → находки → незадължително AI предложение → преглед → прилагане → проверка`.
+**Проблем → решение.** Находките се нуждаят от доказателства, а поправките — от контролиран преглед. CodeGuard съчетава Rust скенер и CLI с macOS приложение чрез Tauri 2 и React. Показва контекст и находки, а при желание иска предложение от OpenAI или Anthropic. Промяната се вижда като diff, изисква изрично одобрение, проверява се и остава в история за защитено връщане.
 
-**Моят принос.** Лично хранилище в моя акаунт. **Статус.** Активна частна разработка; кодът и компилацията не са публични. Описанието е основано на README и структурата на проекта, а не на твърдение за публична версия.
+**Моят принос:** лично хранилище с авторска активност. **Инженерни решения:** локално сканиране, ограничен и редактиран AI контекст, ключове в macOS Keychain, контролиран достъп до файловете на проекта и връщане при проверен конфликт са описани в документацията. **Статус:** частна разработка; няма публичен код или линк към релийз.
 
-<img src="assets/architecture/codeguard.svg" alt="Архитектура на CodeGuard: локален проект, Rust скенер, находки, незадължително AI предложение, преглед и проверка" width="100%">
+### Платформа за правила · full-stack продукт
 
-### FiveM системи · разработка на ресурси
+<picture><source media="(max-width: 650px)" srcset="assets/generated/feature-rules-bg-mobile.svg"><img src="assets/generated/feature-rules-bg.svg" alt="Административна платформа с чернови, публикуване, контрол на достъпа, версии и одит" width="100%"></picture>
 
-Поддържам Lua ресурси и сървърни модификации в лични хранилища и имам авторски commit-и в избрани хранилища на AstroByte Development. Потвърдената работа обхваща бизнес регистър, DMV, документи и ресурси, свързани с превозни средства. Организационната работа е съвместна и частна; описанията посочват областта, без да публикуват код или да ми приписват чужди commit-и.
+**Проблем → решение.** Правилата на сървър се нуждаят от публичен изглед и контролиран редакторски процес. Частният личен проект използва Next.js, React, TypeScript, PostgreSQL и Prisma. Документацията описва Discord OAuth администрация, чернови и публикуване, история на версиите, сървърни проверки на достъпа и одитен журнал.
 
-**Инженерен подход.** Граници между клиент и сървър, съхранение на данни и интеграция на ресурси. Свойствата за сигурност и производителност трябва да се оценяват за всеки ресурс поотделно.
+**Моят принос:** лично хранилище с авторски commit-и. **Статус:** частно; не твърдя, че има публично демо.
 
-<img src="assets/architecture/fivem.svg" alt="Архитектура на FiveM ресурс: клиент, сървърен ресурс и база данни" width="100%">
+### DMV таблет · FiveM процес
 
-### Уеб администриране · частен проект
+<picture><source media="(max-width: 650px)" srcset="assets/generated/feature-dmv-bg-mobile.svg"><img src="assets/generated/feature-dmv-bg.svg" alt="DMV система с регистрация, история на номера, проверка и локализация" width="100%"></picture>
 
-Лично TypeScript хранилище е описано като сайт с правила за FiveM сървър и Discord административен панел. То е частно, затова тук няма линк към кода или твърдение за работещо демо. Публичният ми профил описва и опит с backend, бази данни и Discord интеграции; конкретни реализации няма да бъдат изброявани, докато не могат да бъдат споделени.
+**Проект:** частен Qbox ресурс на AstroByte Development с FiveM NUI таблет, Lua клиент и сървър, записи за регистрация и MySQL. README описва регистрация, история на номерата, QR проверка и локализация.
 
-## Инженерен подход
+**Моят принос:** има авторски commit-и, включително промяна по релийз. Това е **организационен проект**; не си приписвам цялата система. **Статус:** частен код.
 
-| Област | Върху какво работя |
-| --- | --- |
-| Инструменти за разработчици | Локален анализ, находки с доказателства, контролирани AI поправки |
-| FiveM | Lua ресурси, интеграции в екосистемата Qbox, клиентски и сървърни процеси |
-| Уеб системи | TypeScript интерфейси и административни процеси |
-| Операции | Автоматизация, Git процеси и поддържаеми доставки |
+### Бизнес регистър · FiveM записи
 
-## Технологии
+<picture><source media="(max-width: 650px)" srcset="assets/generated/feature-registry-bg-mobile.svg"><img src="assets/generated/feature-registry-bg.svg" alt="Бизнес регистър със записи, документи, сървърна валидация и журнал" width="100%"></picture>
 
-**Потвърдени в прегледаните хранилища:** Rust, Lua, TypeScript, React, Tauri 2, Python, интеграции с OpenAI и Anthropic. Настолното приложение CodeGuard е за macOS; текущият интерфейс е Tauri/React, а не SwiftUI.
+**Проект:** частен Qbox ресурс на AstroByte Development за бизнес записи и документи. README описва сървърна валидация, MySQL журнал, локализация и интерфейс тип таблет.
 
-**От съществуващия ми профил и частната FiveM работа:** JavaScript, Node.js, MySQL, Qbox, `ox_lib`, `ox_target`, `ox_inventory` и `oxmysql`. Това са области на опит, без твърдение, че всеки показан проект ги използва.
+**Моят принос:** видим е авторски първоначален commit. Това доказва принос, но не и еднолична собственост върху всяка следваща промяна. **Статус:** частен код.
 
-## Активност в GitHub
+### Съвместна FiveM сървърна инфраструктура
 
-<img src="assets/metrics/activity.svg" alt="Показатели от публичния календар с приноси в GitHub за последните 12 месеца" width="100%">
+<picture><source media="(max-width: 650px)" srcset="assets/generated/feature-collaboration-bg-mobile.svg"><img src="assets/generated/feature-collaboration-bg.svg" alt="Съвместна FiveM инфраструктура с ресурси и работа по базата данни" width="100%"></picture>
 
-Графиката използва публичния календар с приноси в GitHub за този акаунт. Приносите включват и дейности, различни от commit-и. Тя не разкрива частни хранилища и не измерва отработени часове. Автоматизацията обновява графиката ежедневно; датата върху нея показва кога е генерирана. [Метод на измерване](docs/metrics.md).
+**Проект:** споделено частно FiveM хранилище в акаунта на друг разработчик. **Моят принос:** при одита са установени 44 авторски commit-а в достъпните клонове, включително промяна по базата данни. Това е **съвместен проект**; визуализацията описва общата система и не представя цялата реализация като моя. **Статус:** частен код.
 
-## Контакт
+<a id="all-projects"></a>
+<img src="assets/generated/section-04-bg.svg" alt="04 — Всички проекти" width="100%">
 
-За инструменти за разработчици, FiveM системи и уеб администриране [свържете се с мен през GitHub](https://github.com/gopeto222). Други канали ще бъдат добавени, когато има публичен адрес.
+<picture><source media="(max-width: 650px)" srcset="assets/generated/matrix-bg-mobile.svg"><img src="assets/generated/matrix-bg.svg" alt="Матрица от 20 проверени лични и съвместни проекта с категория, технологии, роля и видимост" width="100%"></picture>
 
-<sub>AstroByte Development · Георги Канчев</sub>
+Матрицата се генерира от [публично безопасния инвентар](data/projects.json). Съдържа всичките 20 достъпни хранилища с лична собственост или установен авторски принос, включително този профил. Пет други организационни хранилища са прегледани и изключени поради липса на установен авторски принос. Частните записи използват описателни имена и не съдържат URL адреси. Един commit доказва авторска промяна, но не еднолично авторство на проекта. [Метод и ограничения](docs/discovery.md).
+
+<a id="how-i-build"></a>
+<img src="assets/generated/section-05-bg.svg" alt="05 — Как разработвам" width="100%">
+
+<picture><source media="(max-width: 650px)" srcset="assets/generated/engineering-bg-mobile.svg"><img src="assets/generated/engineering-bg.svg" alt="Инженерни принципи за сигурност, производителност, архитектура и доставка" width="100%"></picture>
+
+Най-силните доказателства са в системите: изричният diff преглед и защитеното връщане в CodeGuard; сървърният контрол на достъпа, версиите и одитният журнал в платформата за правила; и сървърната валидация в Qbox регистъра. Това са решения за конкретни проекти, а не твърдение, че всеки ресурс има еднакви защити.
+
+<a id="technology"></a>
+<img src="assets/generated/section-06-bg.svg" alt="06 — Технологии" width="100%">
+
+<picture><source media="(max-width: 650px)" srcset="assets/generated/technology-bg-mobile.svg"><img src="assets/generated/technology-bg.svg" alt="Карта на технологиите за системи, уеб, данни, настолни приложения, AI и доставка" width="100%"></picture>
+
+Езиковата активност измерва **докосвания на файлове с изходен код в мои немърджващи commit-и** от достъпните лични и съвместни хранилища. Файл, променен в два commit-а, се брои два пъти. Това не измерва собственост върху кода или умения и не публикува частен код. Данните се обновяват само при одит с достъп; публичният workflow няма достъп до частните хранилища. [Метод](docs/discovery.md).
+
+<picture><source media="(max-width: 650px)" srcset="assets/generated/languages-bg-mobile.svg"><img src="assets/generated/languages-bg.svg" alt="Езикова активност според променените файлове в авторски commit-и" width="100%"></picture>
+
+<a id="architecture"></a>
+<img src="assets/generated/section-07-bg.svg" alt="07 — Архитектура" width="100%">
+
+Това са обобщени карти на компоненти, потвърдени от документацията или структурата на хранилищата. Незадължителните и вътрешните пътища са умишлено опростени.
+
+<picture><source media="(max-width: 650px)" srcset="assets/generated/architecture-codeguard-bg-mobile.svg"><img src="assets/generated/architecture-codeguard-bg.svg" alt="CodeGuard: локален проект, Rust скенер, находки, незадължително AI предложение и преглед" width="100%"></picture>
+
+<picture><source media="(max-width: 650px)" srcset="assets/generated/architecture-rules-bg-mobile.svg"><img src="assets/generated/architecture-rules-bg.svg" alt="Платформа за правила: браузър, Next.js, Discord вход, редактор и PostgreSQL" width="100%"></picture>
+
+<picture><source media="(max-width: 650px)" srcset="assets/generated/architecture-dmv-bg-mobile.svg"><img src="assets/generated/architecture-dmv-bg.svg" alt="DMV: играч, NUI таблет, Lua сървър, Qbox и MySQL" width="100%"></picture>
+
+<picture><source media="(max-width: 650px)" srcset="assets/generated/architecture-collaboration-bg-mobile.svg"><img src="assets/generated/architecture-collaboration-bg.svg" alt="Съвместна FiveM система: клиент, сървърни ресурси, споделен процес и съхранение" width="100%"></picture>
+
+<a id="activity"></a>
+<img src="assets/generated/section-08-bg.svg" alt="08 — Активност" width="100%">
+
+<picture><source media="(max-width: 650px)" srcset="assets/metrics/activity-bg-mobile.svg"><img src="assets/metrics/activity-bg.svg" alt="Публични GitHub приноси, активни дни, поредици и дневен календар" width="100%"></picture>
+
+Картата се обновява от календара на GitHub. Приносите не са равни на commit-и, часове или собственост върху проекти. Датата върху картата показва кога е генерирана. [Метод](docs/metrics.md).
+
+<a id="about"></a>
+<img src="assets/generated/section-09-bg.svg" alt="09 — За мен" width="100%">
+
+Работя на границата между продуктов интерфейс и системна логика: скенер с контролирани AI предложения, административни процеси с ясни права и FiveM ресурси, свързани със сървърна логика и постоянни данни. Използвам Git, тестове и документация, за да могат системите да се променят и възстановяват по-лесно.
+
+<a id="contact"></a>
+<img src="assets/generated/section-10-bg.svg" alt="10 — Контакт" width="100%">
+
+За инструменти за разработчици, FiveM системи или full-stack администриране [свържете се с мен през GitHub](https://github.com/gopeto222). Имейл, сайт и Discord ще се появят тук, когато има публични адреси.
+
+<sub>AstroByte Development · Георги Канчев · <a href="README.md">English version</a></sub>
