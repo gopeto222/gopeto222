@@ -1,159 +1,62 @@
-# Hi, I'm G. Kanchev
+<p align="right"><strong>English</strong> · <a href="README.bg.md">Български</a></p>
 
-### FiveM Developer | Discord Bot Developer | Backend & Web Developer
+<img src="assets/brand/hero.svg" alt="Georgi Kanchev — software developer, AstroByte Development" width="100%">
 
-I focus on building clean, optimized and maintainable systems, with most of my work centered around **FiveM development, Discord bots, backend systems, databases and modern web applications**.
+<p align="center"><strong>Full-stack systems · FiveM infrastructure · Developer tools · Automation</strong></p>
 
-I enjoy creating complete systems from the ground up - from server-side logic and database architecture to Discord integrations, APIs, UI design and frontend implementation.
+I build software that connects interfaces, server logic, and operational workflows. My current work includes local code analysis, FiveM resources, and web administration tools. I favor explicit trust boundaries, maintainable modules, and reviewable changes.
 
----
+<p align="center"><a href="#selected-work">Work</a> · <a href="#engineering-focus">Engineering</a> · <a href="#technology">Technology</a> · <a href="#github-activity">Activity</a> · <a href="#contact">Contact</a></p>
 
-## About Me
+## Selected work
 
-- FiveM Developer
-- Discord Bot Developer
-- Lua Developer
-- Web Developer
-- Backend Developer
-- Database Development
-- API Development
-- UI/UX Design
-- Focused on performance, security and maintainable code
+### AstroByte CodeGuard · developer tool
 
----
+**Problem.** A scan result is useful only when a developer can inspect the evidence and safely evaluate a proposed fix.
 
-# Tech Stack
+**Solution.** A local Rust scanner and CLI feed a Tauri 2 desktop application with React and TypeScript. The app presents findings and source context, and offers optional fixes through OpenAI or Anthropic. A proposed change is shown as a diff and requires explicit approval before it is applied. Fix history supports verification and guarded revert.
 
-![Lua](https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
-![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white)
-![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
-![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+**Architecture.** `project → Rust scanner → findings → optional AI proposal → diff review → apply → verification`.
 
----
+**My contribution.** Personal repository under my account. **Status.** Active private development; source and build are not public. The description is based on the repository's README and project structure, not a public release claim.
 
-## FiveM Development
+<img src="assets/architecture/codeguard.svg" alt="CodeGuard architecture: local project, Rust scanner, findings, optional AI proposal, review and verification" width="100%">
 
-My main area of development is **FiveM**, where I build custom resources, gameplay systems and server infrastructure.
+### FiveM systems · resource development
 
-### Experience
+I maintain Lua resources and server customizations in personal repositories and have authored commits in selected AstroByte Development organization repositories. The verified work spans business registry, DMV, document and vehicle related resources. Organization work is collaborative and private; these descriptions identify the domain without publishing private source or attributing others' commits to me.
 
-- Qbox
-- qbx_core
-- ox_lib
-- ox_target
-- ox_inventory
-- oxmysql
-- Custom NUI development
-- Client/server architecture
-- Server-side validation
-- MySQL persistence
-- Permission systems
-- Logging and audit systems
-- Custom job systems
-- Administrative systems
-- Custom gameplay mechanics
-- Performance optimization
+**Engineering focus.** Client and server boundaries, persistent data, and resource integration. Individual security or performance properties should be judged per resource; I do not claim every resource implements every pattern.
 
----
+<img src="assets/architecture/fivem.svg" alt="FiveM resource architecture: client, server resource and persistent database" width="100%">
 
-## Discord Bot Development
+### Web administration · private project
 
-I develop custom **Discord bots and automation systems** for server management, integrations and custom functionality.
+A personal TypeScript repository is described as a FiveM server rules website with a Discord administration panel. It is private, so this portfolio does not link to its source or claim a deployed demo. My public profile also describes experience with backend, databases and Discord integrations; specific implementations remain unlisted until they can be shared.
 
-### Experience
+## Engineering focus
 
-- Custom Discord bots
-- Slash commands
-- Custom commands and interactions
-- Ticket systems
-- Moderation systems
-- Logging systems
-- Permission systems
-- Role management
-- Automated server management
-- Database integration
-- API integrations
-- Web dashboard integrations
-- FiveM integrations
-- Event-driven systems
+| Domain | What I work on |
+| --- | --- |
+| Developer tools | Local analysis, evidence-rich findings, guarded AI assisted edits |
+| FiveM | Lua resources, Qbox ecosystem integrations, client/server workflows |
+| Web systems | TypeScript interfaces and administration workflows |
+| Operations | Automation, Git workflows and maintainable delivery |
 
----
+## Technology
 
-## What I Build
+**Verified in inspected repositories:** Rust, Lua, TypeScript, React, Tauri 2, Python, OpenAI and Anthropic integrations. The CodeGuard desktop app targets macOS; its current frontend is Tauri/React, not SwiftUI.
 
-```text
-FiveM Development
-├── Custom gameplay systems
-├── Police systems
-├── Government systems
-├── Judicial systems
-├── Business systems
-├── Inventory integrations
-├── Custom tablets
-├── Custom NUI interfaces
-├── Administrative tools
-├── Database systems
-├── Security systems
-└── Server utilities
+**From my existing profile and private FiveM work:** JavaScript, Node.js, MySQL, Qbox, `ox_lib`, `ox_target`, `ox_inventory`, and `oxmysql`. These are experience areas, not claims that every showcased project uses them.
 
-Discord Development
-├── Custom Discord bots
-├── Ticket systems
-├── Moderation systems
-├── Logging systems
-├── Role management
-├── Automation systems
-├── API integrations
-├── Database integrations
-├── FiveM integrations
-└── Web dashboards
+## GitHub activity
 
-Web Development
-├── Frontend interfaces
-├── Backend systems
-├── APIs
-├── Authentication
-├── Database integration
-└── Administration panels
-```
+<img src="assets/metrics/activity.svg" alt="Public GitHub contribution calendar metrics for the most recent 12 months" width="100%">
 
----
+The graphic uses GitHub's public contribution calendar for this account. Contributions include activity other than commits. It does not reveal private repositories or measure hours worked. The workflow refreshes the graphic daily; a date on the card shows when it was generated. [Metric method](docs/metrics.md).
 
-## Development Principles
+## Contact
 
-```lua
-local development = {
-    performance = true,
-    security = true,
-    clean_code = true,
-    maintainability = true,
-    scalability = true
-}
-```
+For developer tools, FiveM systems, and web administration work, [contact me through GitHub](https://github.com/gopeto222). Other contact channels will be added when a public address is available.
 
-I build my projects to be:
-
-- Clean and structured
-- Easy to maintain
-- Secure
-- Optimized
-- Configurable
-- Modular
-- Production-ready
-
----
-
-## Profile Views
-
-![Profile Views](https://komarev.com/ghpvc/?username=gopeto222&style=for-the-badge)
-
----
-
-### Always building. Always improving.
+<sub>AstroByte Development · Georgi Kanchev</sub>

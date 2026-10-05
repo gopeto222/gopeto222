@@ -1,0 +1,31 @@
+name: Validate profile
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - name: Python syntax
+        run: python3 -m compileall -q scripts tests
+      - name: Unit tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Generated assets
+        run: python3 scripts/metrics.py --validate
+      - name: SVG and local links
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          import xml.etree.ElementTree as ET
+          for asset in Path('assets').rglob('*.svg'):
+              ET.parse(asset)
+          for readme in (Path('README.md'), Path('README.bg.md')):
+              for target in re.findall(r'(?:src|href)="([^"]+)"', readme.read_text()):
+                  if not target.startswith(('http', '#')) and not Path(target.split('#')[0]).exists():
+                      raise SystemExit(f'{readme}: missing {target}')
+          PY
