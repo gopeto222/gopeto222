@@ -20,6 +20,9 @@ def verify() -> None:
     for language in ('en','bg'):
         path=ROOT/('README.md' if language=='en' else 'README.bg.md')
         content=path.read_text(encoding='utf-8')
+        other='README.bg.md' if language=='en' else 'README.md'
+        if f'<a href="{other}"' not in content or f'header-{language}.svg' not in content or f'header-{language}-mobile.svg' not in content:
+            raise ValueError(f'{path}: missing linked language control')
         ids=set(re.findall(r'<a id="([^"]+)"></a>',content))
         for target in re.findall(r'(?:src|srcset|href)="([^"]+)"',content):
             if target.startswith(('http://','https://')):continue

@@ -14,6 +14,8 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
+from theme import BG, SURFACE, BORDER, TEXT, MUTED, SOFT, BLUE, CYAN, GREEN, ACTIVITY_LEVELS
+
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "activity.json"
 SVGS = [ROOT / "assets" / "metrics" / f"activity-{lang}{suffix}.svg" for lang in ("en", "bg") for suffix in ("", "-mobile")]
@@ -90,9 +92,9 @@ def render_svg(data: dict[str, Any], generated: str, lang: str = "en", mobile: b
     lines = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" role="img" aria-labelledby="t d">',
         '<title id="t">Development activity</title><desc id="d">Public GitHub contribution calendar with totals and daily intensity</desc>',
-        f'<rect width="{width}" height="{height}" rx="24" fill="#0b111b"/>',
-        f'<rect x="1" y="1" width="{width-2}" height="{height-2}" rx="23" fill="none" stroke="#345065"/>',
-        f'<text x="30" y="44" fill="#68e2e6" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="2">{("08 / АКТИВНОСТ" if bg else "08 / DEVELOPMENT ACTIVITY")}</text>',
+        f'<rect width="{width}" height="{height}" rx="24" fill="{BG}"/>',
+        f'<rect x="1" y="1" width="{width-2}" height="{height-2}" rx="23" fill="none" stroke="{BORDER}"/>',
+        f'<text x="30" y="44" fill="{CYAN}" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="2">{("08 / АКТИВНОСТ" if bg else "08 / DEVELOPMENT ACTIVITY")}</text>',
     ]
     values = (data["total"], data["active_days"], current, longest)
     for i, (label, value) in enumerate(zip(labels, values)):
@@ -100,18 +102,20 @@ def render_svg(data: dict[str, Any], generated: str, lang: str = "en", mobile: b
             x, y, card_w = 30 + (i % 2) * 274, 74 + (i // 2) * 132, 260
         else:
             x, y, card_w = 30 + i * 290, 78, 270
+        accent = GREEN if i in (1, 2, 3) else BLUE
         lines += [
-            f'<rect x="{x}" y="{y}" width="{card_w}" height="110" rx="13" fill="#142434" stroke="#36586b"/>',
-            f'<text x="{x+17}" y="{y+33}" fill="#a7bfce" font-family="Arial,sans-serif" font-size="{13 if mobile else 15}" font-weight="700">{label}</text>',
-            f'<text x="{x+17}" y="{y+83}" fill="#eef6fc" font-family="Arial,sans-serif" font-size="44" font-weight="700">{value}</text>',
+            f'<path d="M{x+14} {y+1}H{x+card_w-14}" stroke="{accent}" stroke-width="3"/>',
+            f'<rect x="{x}" y="{y}" width="{card_w}" height="110" rx="13" fill="{SURFACE}" stroke="{accent}"/>',
+            f'<text x="{x+17}" y="{y+33}" fill="{MUTED}" font-family="Arial,sans-serif" font-size="{13 if mobile else 15}" font-weight="700">{label}</text>',
+            f'<text x="{x+17}" y="{y+83}" fill="{accent}" font-family="Arial,sans-serif" font-size="44" font-weight="700">{value}</text>',
         ]
     heading_y = 365 if mobile else 243
-    lines.append(f'<text x="30" y="{heading_y}" fill="#a7bfce" font-family="Arial,sans-serif" font-size="16">{("Последен принос: " if bg else "Last contribution: ")}{last}</text>')
+    lines.append(f'<text x="30" y="{heading_y}" fill="{MUTED}" font-family="Arial,sans-serif" font-size="16">{("Последен принос: " if bg else "Last contribution: ")}{last}</text>')
     selected = sorted(days.items())[-182:] if mobile else sorted(days.items())
     first = date.fromisoformat(selected[0][0])
     start = first - timedelta(days=(first.weekday() + 1) % 7)
     cell = 18 if mobile else 15
-    palette = ("#223444", "#235b67", "#298399", "#42b7c6", "#79e4e4")
+    palette = ACTIVITY_LEVELS
     top = 390 if mobile else 268
     for key, count in selected:
         day = date.fromisoformat(key)
@@ -122,8 +126,8 @@ def render_svg(data: dict[str, Any], generated: str, lang: str = "en", mobile: b
     window = "26 weeks shown / totals for rolling year" if mobile else "Rolling yearly window"
     if bg:
         window = "26 седмици / годишни общи данни" if mobile else "Последните 12 месеца"
-    lines.append(f'<text x="30" y="{height-57}" fill="#a7bfce" font-family="Arial,sans-serif" font-size="15">{window}</text>')
-    lines.append(f'<text x="30" y="{height-27}" fill="#7294a9" font-family="Arial,sans-serif" font-size="14">GitHub public calendar · {generated} UTC</text>')
+    lines.append(f'<text x="30" y="{height-57}" fill="{MUTED}" font-family="Arial,sans-serif" font-size="15">{window}</text>')
+    lines.append(f'<text x="30" y="{height-27}" fill="{SOFT}" font-family="Arial,sans-serif" font-size="14">GitHub public calendar · {generated} UTC</text>')
     lines.append('</svg>')
     return "\n".join(lines) + "\n"
 

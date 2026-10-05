@@ -1,4 +1,4 @@
-<p align="right"><strong>EN</strong> · <a href="README.bg.md">БГ</a></p>
+<a href="README.bg.md" title="Switch to Bulgarian"><picture><source media="(max-width: 650px)" srcset="assets/generated/header-en-mobile.svg"><img src="assets/generated/header-en.svg" alt="EN selected; open Bulgarian version" width="100%"></picture></a>
 
 <picture><source media="(max-width: 650px)" srcset="assets/generated/hero-en-mobile.svg"><img src="assets/generated/hero-en.svg" alt="Georgi Kanchev — software engineer building developer tools, FiveM systems and web platforms" width="100%"></picture>
 
