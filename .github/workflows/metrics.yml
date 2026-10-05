@@ -23,12 +23,16 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/metrics.py
       - name: Validate generated assets
-        run: python3 scripts/metrics.py --validate
+        run: |
+          python3 scripts/metrics.py --validate
+          python3 scripts/visuals.py
+          git diff --exit-code -- assets/generated
+          python3 scripts/qa.py
       - name: Commit changed metrics
         run: |
-          if git diff --quiet -- data/activity.json assets/metrics/activity.svg; then exit 0; fi
+          if git diff --quiet -- data/activity.json assets/metrics; then exit 0; fi
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/activity.json assets/metrics/activity.svg
+          git add data/activity.json assets/metrics
           git commit -m 'chore(metrics): refresh public activity card'
           git push

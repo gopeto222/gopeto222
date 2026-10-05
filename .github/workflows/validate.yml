@@ -15,17 +15,9 @@ jobs:
       - name: Unit tests
         run: python3 -m unittest discover -s tests -v
       - name: Generated assets
-        run: python3 scripts/metrics.py --validate
-      - name: SVG and local links
         run: |
-          python3 - <<'PY'
-          from pathlib import Path
-          import re
-          import xml.etree.ElementTree as ET
-          for asset in Path('assets').rglob('*.svg'):
-              ET.parse(asset)
-          for readme in (Path('README.md'), Path('README.bg.md')):
-              for target in re.findall(r'(?:src|href)="([^"]+)"', readme.read_text()):
-                  if not target.startswith(('http', '#')) and not Path(target.split('#')[0]).exists():
-                      raise SystemExit(f'{readme}: missing {target}')
-          PY
+          python3 scripts/metrics.py --validate
+          python3 scripts/visuals.py
+          git diff --exit-code -- assets/generated
+      - name: SVG and local links
+        run: python3 scripts/qa.py
