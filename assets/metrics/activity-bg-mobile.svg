@@ -5,7 +5,7 @@
 <text x="30" y="44" fill="#68e2e6" font-family="Arial,sans-serif" font-size="19" font-weight="700" letter-spacing="2">08 / АКТИВНОСТ</text>
 <rect x="30" y="74" width="260" height="110" rx="13" fill="#142434" stroke="#36586b"/>
 <text x="47" y="107" fill="#a7bfce" font-family="Arial,sans-serif" font-size="13" font-weight="700">ПРИНОСИ</text>
-<text x="47" y="157" fill="#eef6fc" font-family="Arial,sans-serif" font-size="44" font-weight="700">9</text>
+<text x="47" y="157" fill="#eef6fc" font-family="Arial,sans-serif" font-size="44" font-weight="700">11</text>
 <rect x="304" y="74" width="260" height="110" rx="13" fill="#142434" stroke="#36586b"/>
 <text x="321" y="107" fill="#a7bfce" font-family="Arial,sans-serif" font-size="13" font-weight="700">АКТИВНИ ДНИ</text>
 <text x="321" y="157" fill="#eef6fc" font-family="Arial,sans-serif" font-size="44" font-weight="700">3</text>
