@@ -6,7 +6,7 @@
 <path d="M44 79H286" stroke="#3B82F6" stroke-width="3"/>
 <rect x="30" y="78" width="270" height="110" rx="13" fill="#101E31" stroke="#3B82F6"/>
 <text x="47" y="111" fill="#B5C8DD" font-family="Arial,sans-serif" font-size="15" font-weight="700">ПРИНОСИ</text>
-<text x="47" y="161" fill="#3B82F6" font-family="Arial,sans-serif" font-size="44" font-weight="700">13</text>
+<text x="47" y="161" fill="#3B82F6" font-family="Arial,sans-serif" font-size="44" font-weight="700">17</text>
 <path d="M334 79H576" stroke="#22C55E" stroke-width="3"/>
 <rect x="320" y="78" width="270" height="110" rx="13" fill="#101E31" stroke="#22C55E"/>
 <text x="337" y="111" fill="#B5C8DD" font-family="Arial,sans-serif" font-size="15" font-weight="700">АКТИВНИ ДНИ</text>
@@ -386,6 +386,7 @@
 <rect x="795" y="358" width="11" height="11" rx="2" fill="#213147"/>
 <rect x="810" y="268" width="11" height="11" rx="2" fill="#2856A4"/>
 <rect x="810" y="283" width="11" height="11" rx="2" fill="#8B5CF6"/>
+<rect x="810" y="298" width="11" height="11" rx="2" fill="#213147"/>
 <text x="30" y="398" fill="#B5C8DD" font-family="Arial,sans-serif" font-size="15">Последните 12 месеца</text>
-<text x="30" y="428" fill="#8FA8C2" font-family="Arial,sans-serif" font-size="14">GitHub public calendar · 2026-10-05 UTC</text>
+<text x="30" y="428" fill="#8FA8C2" font-family="Arial,sans-serif" font-size="14">GitHub public calendar · 2026-10-06 UTC</text>
 </svg>
